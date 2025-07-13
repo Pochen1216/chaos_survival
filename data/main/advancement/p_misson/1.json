@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond"
+    },
+    "title": {
+      "text": "獲取鑽石",
+      "color": "#e59e06"
+
+    },
+    "description": {
+      "text": "獲得一顆鑽石。你會因此獲得1分。"
+    },
+    "hidden": false
+  },
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "main:p_misson/1/reward"
+  }
+}

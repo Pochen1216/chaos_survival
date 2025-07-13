@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:obsidian"
+    },
+    "title": {
+      "text": "深入一點",
+      "color": "#e59e06"
+
+    },
+    "description": "進入地獄。你會因此獲得2分。",
+    "frame": "goal"
+  },
+  "parent": "main:p_misson/1",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "main:p_misson/3/reward"
+  }
+}

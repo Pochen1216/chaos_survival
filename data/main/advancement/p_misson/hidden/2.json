@@ -1,0 +1,11 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:enchanted_item"
+    }
+  },
+  "rewards": {
+    "function": "main:p_misson/2/get"
+  }
+}

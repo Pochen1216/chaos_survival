@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_chestplate"
+    },
+    "title": {
+      "text": "我鑽多",
+      "color": "#e59e06"
+
+    },
+    "description": "擁有全套鑽裝。你會因此獲得2分。",
+    "frame": "goal"
+  },
+  "parent": "main:p_misson/1",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "main:p_misson/4/reward"
+  }
+}

@@ -1,0 +1,3 @@
+
+#​[常駐任務]玩家@s已經透過常駐任務達到目標分數，但他仍須再拿下任意限時任務以結算勝利!
+execute if score @s score >= @e[limit=1,tag=m_cen] target run tellraw @a ["",{"text":"[\u5e38\u99d0\u4efb\u52d9]","color":"dark_aqua"},{"text":"\u73a9\u5bb6","color":"white"},{"selector":"@s","color":"dark_green"},{"text":"\u5df2\u7d93\u900f\u904e\u5e38\u99d0\u4efb\u52d9\u9054\u5230\u76ee\u6a19\u5206\u6578\uff0c\u4f46\u4ed6\u4ecd\u9808\u518d\u62ff\u4e0b\u4efb\u610f\u9650\u6642\u4efb\u52d9\u4ee5\u7d50\u7b97\u52dd\u5229!","color":"white"},{"text":"\n "}]

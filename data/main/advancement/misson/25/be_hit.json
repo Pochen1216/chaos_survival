@@ -1,0 +1,11 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "rewards": {
+    "function": "main:misson/21_30/25/be_hit"
+  }
+}
