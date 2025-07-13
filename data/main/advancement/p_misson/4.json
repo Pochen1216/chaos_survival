@@ -9,7 +9,8 @@
 
     },
     "description": "擁有全套鑽裝。你會因此獲得2分。",
-    "frame": "goal"
+    "frame": "goal",
+    "hidden": false
   },
   "parent": "main:p_misson/1",
   "criteria": {

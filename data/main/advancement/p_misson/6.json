@@ -5,7 +5,8 @@
     },
     "title": "地獄探索者",
     "description": "獲得5根烈焰桿和3個哭泣黑曜石。你會因此獲得3分。",
-    "frame": "challenge"
+    "frame": "challenge",
+    "hidden": false
   },
   "parent": "main:p_misson/3",
   "criteria": {

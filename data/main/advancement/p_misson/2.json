@@ -9,7 +9,8 @@
 
     },
     "description": "給任意物品附魔。你會因此獲得2分。",
-    "frame": "goal"
+    "frame": "goal",
+    "hidden": false
   },
   "parent": "main:p_misson/1",
   "criteria": {

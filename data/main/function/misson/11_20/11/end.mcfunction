@@ -10,7 +10,7 @@ execute as @a at @s run playsound minecraft:block.beacon.deactivate
 scoreboard players add @a[tag=win] score 1
 
 schedule clear main:misson/11_20/11/tick
-
+scoreboard players set @s lottery 0
 scoreboard objectives remove die
 function main:system/misson_end
 

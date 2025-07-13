@@ -9,7 +9,7 @@ tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u82b1\u8cbb3\u
 
 
 scoreboard objectives add lottery trigger
-scoreboard players set @s lottery 0
+
 scoreboard objectives add die deathCount
 scoreboard players set @a die 0
 

@@ -41,7 +41,10 @@ scoreboard objectives remove detect_potato
 scoreboard objectives remove H
 scoreboard objectives remove hot_potato
 scoreboard objectives remove 25_tp
-
+scoreboard objectives remove food
+scoreboard objectives remove y
+scoreboard objectives remove food_before
+scoreboard objectives remove food_regen
 
 
 
@@ -66,7 +69,7 @@ scoreboard objectives remove dia_armor_count
 
 
 
-tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u5378\u8f09\u5b8c\u6210\uff0c\u518d\u6b21\u4f7f\u7528\u8acb\u6253/reload","color":"white"}]
+tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n[\u7cfb\u7d71]","color":"gold"},{"text":"\u5378\u8f09\u5b8c\u6210\uff0c\u518d\u6b21\u4f7f\u7528\u8acb\u6253/reload","color":"white"}]
 
 
 

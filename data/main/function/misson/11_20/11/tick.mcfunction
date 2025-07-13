@@ -10,10 +10,10 @@ execute as @a[scores={lottery=1..,die=0}] run function main:misson/11_20/11/lott
 scoreboard players enable @a[scores={die=0}] lottery
 scoreboard players reset @a[scores={die=1..}] lottery
 
+scoreboard players set @a lottery 0
 
 
 
 
-
-execute unless entity @e[scores={lottery=3}] run schedule function main:misson/11_20/11/tick 10t
+schedule function main:misson/11_20/11/tick 5t
 

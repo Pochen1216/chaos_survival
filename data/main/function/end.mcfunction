@@ -11,6 +11,8 @@ tag @a remove misson10
 tag @a remove misson16
 tag @a remove win
 
+execute as @a run attribute @s minecraft:gravity base reset
+
 team remove 25
 
 function main:system/sum_marker/stop
@@ -31,6 +33,20 @@ schedule clear main:p_misson/tick
 schedule clear main:misson/11_20/18/end
 schedule clear main:misson/11_20/19/true_start
 schedule clear main:misson/21_30/27/end
+
+
+#--------------------------------------
+#<混沌生存>
+#作者: Poal
+#特別銘謝: cloudy, 吐司, 金蠍, 16:9, 天狼星, 小黑, 幽幽
+#感謝您的遊玩!
+#--------------------------------------
+#想再開一把的話，請先/function main:uninstall
+
+tellraw @a ["",{"text":"--------------------------------------","color":"gray"},{"text":"\n"},{"text":"<\u6df7\u6c8c\u751f\u5b58>","underlined":true,"color":"gold"},{"text":"\n\u4f5c\u8005: "},{"text":"Poal","color":"green"},{"text":"\n\u7279\u5225\u9298\u8b1d:"},{"text":" cloudy, \u5410\u53f8, \u91d1\u880d, 16:9, \u5929\u72fc\u661f, \u5c0f\u9ed1, \u5e7d\u5e7d","color":"aqua"},{"text":"\n"},{"text":"\u611f\u8b1d\u60a8\u7684\u904a\u73a9!","color":"gold"},{"text":"\n"},{"text":"--------------------------------------","color":"gray"},{"text":"\n"},{"text":"\u60f3\u518d\u958b\u4e00\u628a\u7684\u8a71\uff0c\u8acb\u5148/function main:uninstall","color":"dark_gray"}]
+
+
+
 
 
 

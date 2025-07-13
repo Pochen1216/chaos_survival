@@ -1,3 +1,6 @@
+
+tellraw @a {"text":"-------------------------------------\n","color":"gray"}
+
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=1},limit=1] run function main:misson/1_10/1/start
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=2},limit=1] run function main:misson/1_10/2/start
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=3},limit=1] run function main:misson/1_10/3/start

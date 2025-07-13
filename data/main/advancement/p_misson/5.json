@@ -5,7 +5,8 @@
     },
     "title": "EX咖哩棒",
     "description": "在沒有力量效果的情況下一擊斃命一隻滿血殭屍。你會因此獲得3分。",
-    "frame": "challenge"
+    "frame": "challenge",
+    "hidden": false
   },
   "parent": "main:p_misson/2",
   "criteria": {
