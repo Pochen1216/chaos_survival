@@ -10,6 +10,7 @@ tag @a remove misson9
 tag @a remove misson10
 tag @a remove misson16
 tag @a remove win
+effect clear @a
 
 execute as @a run attribute @s minecraft:gravity base reset
 
