@@ -75,9 +75,9 @@ execute at @e[limit=1,tag=m_cen] run forceload add ~ ~
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u904a\u6232\u958b\u59cb!","color":"white"}]
 #[系統]將在30秒後 指派第一項任務!
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u5c07\u572830\u79d2\u5f8c \u6307\u6d3e\u7b2c\u4e00\u9805\u4efb\u52d9!","color":"white"}]
-schedule function main:system/misson_countdown 5s
+schedule function main:system/misson_countdown 30s
 
-execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..24
+execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..30
 
 gamemode survival @a
 time set day
