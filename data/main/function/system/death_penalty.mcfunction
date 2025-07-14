@@ -5,6 +5,7 @@ tellraw @s ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4f60\u56e0\u6
 effect give @s minecraft:slowness 20 255 true
 effect give @s minecraft:blindness 20 1 true
 effect give @s mining_fatigue 20 2 true
+effect give @s weakness 20 255 true
 
 effect give @s minecraft:resistance 30 4 false
 

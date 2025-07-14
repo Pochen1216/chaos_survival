@@ -2,10 +2,11 @@
 scoreboard players operation 目前時間 info = @e[tag=m_cen,limit=1] all_timer
 scoreboard players operation 目標勝利次數 info = @e[tag=m_cen,limit=1] target
 
-execute as @a[scores={deaths=1..}] run function main:system/death_penalty
+execute if entity @a[scores={deaths=1..}] run schedule function main:system/find_death 1t
 
 #cut_clean
 execute if entity @e[tag=m_cen,tag=cut_clean] run function main:system/cut_clean/tick
+
 
 
 #倒數bossbar

@@ -3,6 +3,7 @@ gamerule naturalRegeneration false
 effect clear @a resistance
 effect clear @a slowness
 effect clear @a mining_fatigue
+effect clear @s weakness
 effect clear @a blindness
 
 scoreboard objectives add die deathCount

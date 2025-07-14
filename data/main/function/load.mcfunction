@@ -6,6 +6,7 @@ scoreboard objectives add score dummy
 scoreboard objectives add all_timer dummy
 scoreboard objectives add misson_num dummy
 scoreboard objectives add target dummy
+scoreboard objectives add event_num dummy
 
 scoreboard objectives add info dummy
 
