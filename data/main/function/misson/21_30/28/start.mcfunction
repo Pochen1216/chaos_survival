@@ -1,6 +1,6 @@
-#暴飲暴食
+#快速排序
 
-title @a title [{"text":"暴飲暴食","color":"white"}]
+title @a title [{"text":"快速排序","color":"white"}]
 execute as @a at @s run playsound minecraft:entity.arrow.hit_player
 
 #[任務]60秒內，補充最多飽食度的玩家獲勝!

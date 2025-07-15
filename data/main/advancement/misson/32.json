@@ -1,0 +1,18 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:enderman"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/31_40/32/get"
+  }
+}

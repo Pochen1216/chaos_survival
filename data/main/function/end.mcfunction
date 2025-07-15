@@ -9,6 +9,8 @@ tag @e remove in_game
 tag @a remove misson9
 tag @a remove misson10
 tag @a remove misson16
+tag @a remove misson32
+tag @a remove misson33
 tag @a remove win
 effect clear @a
 
@@ -33,7 +35,9 @@ schedule clear main:p_misson/tick
 
 schedule clear main:misson/11_20/18/end
 schedule clear main:misson/11_20/19/true_start
+schedule clear main:misson/21_30/23/true_start
 schedule clear main:misson/21_30/27/end
+schedule clear main:misson/31_40/34/end
 
 
 #--------------------------------------

@@ -1,0 +1,14 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:lava"
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/31_40/33/get"
+  }
+}
