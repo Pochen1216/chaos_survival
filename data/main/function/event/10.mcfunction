@@ -7,4 +7,4 @@ tellraw @a ["",{"text":"[\u4e8b\u4ef6]","color":"blue"},{"text":"\u6240\u6709\u7
 
 
 execute as @a at @s run summon iron_golem ~ ~ ~
-execute as @a at @s run spreadplayers ~ ~ 0 5 true @e[type=iron_golem,limit=1,sort=nearest]
+#execute as @a at @s run spreadplayers ~ ~ 0 5 true @e[type=iron_golem,limit=1,sort=nearest]

@@ -1,0 +1,22 @@
+
+
+execute as @a[scores={break_nsword=0}] run kill @s
+
+execute as @a[scores={break_nsword=1}] run tag @s add win
+
+#[任務]由於@a[scores={break_nsword=0}]未使用神劍，因此遭到了制裁!
+tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u7531\u65bc","color":"white"},{"selector":"@a[scores={break_nsword=0}]","color":"dark_green"},{"text":"\u672a\u4f7f\u7528\u795e\u528d\uff0c\u56e0\u6b64\u906d\u5230\u4e86\u5236\u88c1!","color":"white"},{"text":"\n "}]
+
+
+
+#[系統]@a[tag=win]贏得了這回合!
+tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"selector":"@a[tag=win]","color":"green"},{"text":"\u8d0f\u5f97\u4e86\u9019\u56de\u5408!","color":"white"}]
+execute as @a at @s run playsound minecraft:block.beacon.deactivate
+
+
+scoreboard players add @a[tag=win] score 1
+
+
+
+function main:system/misson_end
+

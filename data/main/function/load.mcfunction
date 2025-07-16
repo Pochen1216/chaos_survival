@@ -22,6 +22,8 @@ scoreboard players enable @a settings
 #[混沌生存]指令包安裝成功!
 tellraw @a ["",{"text":"[\u6df7\u6c8c\u751f\u5b58]","color":"gold"},{"text":"\u6307\u4ee4\u5305\u5b89\u88dd\u6210\u529f!","color":"white"}]
 
+
+
 #[混沌生存]尚未偵測到地圖中心點，點這裡以生成
 execute unless entity @e[tag=m_cen] run tellraw @a ["",{"text":"[\u6df7\u6c8c\u751f\u5b58]","color":"gold"},{"text":"\u5c1a\u672a\u5075\u6e2c\u5230\u5730\u5716\u4e2d\u5fc3\u9ede\uff0c\u9ede","color":"white"},{"text":"\u9019\u88e1","underlined":true,"color":"dark_blue","click_event":{"action":"run_command","command":"/trigger settings set 1000"}},{"text":"\u4ee5\u751f\u6210","color":"white"}]
 # settings => 1000

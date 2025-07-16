@@ -59,6 +59,8 @@ effect give @a resistance 10 4 false
 gamerule keepInventory true
 execute at @e[limit=1,tag=m_cen] run spawnpoint @a
 
+xp set @a 0 points
+
 
 #免燒
 scoreboard objectives add cc_iron dummy
@@ -84,7 +86,7 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u904a\u6232\u9
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u5c07\u572830\u79d2\u5f8c \u6307\u6d3e\u7b2c\u4e00\u9805\u4efb\u52d9!","color":"white"}]
 schedule function main:system/misson_countdown 30s
 
-execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..40
+execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..48
 
 gamemode survival @a
 time set day
@@ -111,8 +113,8 @@ function main:p_misson/tick
 
 
 
-#sp: for misson 18
+#sp: for misson 18,47
 
 scoreboard objectives add armor_value armor
-
+scoreboard objectives add lv_now level
 
