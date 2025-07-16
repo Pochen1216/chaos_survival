@@ -39,6 +39,10 @@ advancement grant @a only main:misson/25/hit
 advancement grant @a only main:misson/29
 advancement grant @a only main:misson/32
 advancement grant @a only main:misson/33
+advancement grant @a only main:misson/38
+advancement grant @a only main:misson/39
+advancement grant @a only main:misson/40
+advancement grant @a only main:misson/43
 
 
 

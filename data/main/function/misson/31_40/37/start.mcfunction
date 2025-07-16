@@ -21,7 +21,7 @@ bossbar set minecraft:misson_timer max 1200
 
 
 
-schedule function main:misson/1_10/2/tick 1t
+schedule function main:misson/31_40/37/tick 1t
 
 
 

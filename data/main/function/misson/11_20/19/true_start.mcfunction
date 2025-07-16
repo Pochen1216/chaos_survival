@@ -1,5 +1,5 @@
 
-function main:system/sum_marker/start
+
 
 execute as @e[tag=m_cen] at @s run setblock ~ ~ ~ minecraft:end_portal
 execute as @e[tag=m_cen] run tp @a @s

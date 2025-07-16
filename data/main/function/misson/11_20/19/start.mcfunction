@@ -15,4 +15,4 @@ bossbar set minecraft:misson_timer max 100
 
 schedule function main:misson/11_20/19/true_start 5s
 
-
+function main:system/sum_marker/start

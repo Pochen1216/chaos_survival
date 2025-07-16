@@ -1,0 +1,11 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "rewards": {
+    "function": "main:misson/41_50/43/get"
+  }
+}

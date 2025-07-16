@@ -7,14 +7,14 @@ scoreboard objectives add temp2 dummy
 scoreboard players set temp temp2 0
 execute as @a run scoreboard players operation temp temp2 > @s H
 
-execute as @a if score @s armor_value = temp temp2 run tag @s add 1st
+execute as @a if score @s H = temp temp2 run tag @s add 1st
 
 scoreboard players set temp temp2 0
 execute as @a[tag=!1st] run scoreboard players operation temp temp2 > @s H
 
-execute as @a if score @s armor_value = temp temp2 run tag @s add win
+execute as @a if score @s H = temp temp2 run tag @s add win
 
-scoreboard objectives remove temp2
+#scoreboard objectives remove temp2
 
 
 #[任務]@s的血量: @s->H
@@ -27,6 +27,7 @@ execute as @a at @s run playsound minecraft:block.beacon.deactivate
 scoreboard players add @a[tag=win] score 1
 
 scoreboard objectives remove H
+tag @a remove 1st
 
 function main:system/misson_end
 

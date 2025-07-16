@@ -6,6 +6,7 @@ execute as @a at @s run playsound minecraft:block.beacon.deactivate
 
 scoreboard players add @a[tag=win] score 1
 
+schedule clear main:misson/31_40/31/tick
 
 
  function main:system/misson_end
