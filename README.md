@@ -11,7 +11,14 @@
 #-------------------------------------
 
 
-[混沌生存]請使用伺服器開啟，並將function-permission-level調為3
+[混沌生存]請使用伺服器開啟，並將server_properites調為.......
+allow-flight=true
+allow-nether=true
+broadcast-console-to-ops=false  (這調不調只差在op聊天室會不會有沒用的訊息)
+difficulty=normal   (其實調啥都好，但不要peaceful)
+enable-command-block=true
+function-permission-level=3
+spawn-protection=0
 
 作者:poal
 dc : Pochen1216

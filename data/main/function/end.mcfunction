@@ -13,6 +13,9 @@ tag @a remove misson32
 tag @a remove misson33
 tag @a remove misson38
 tag @a remove misson39
+tag @a remove misson40
+tag @a remove misson43
+tag @a remove misson49
 tag @a remove win
 effect clear @a
 
@@ -24,6 +27,12 @@ function main:system/sum_marker/stop
 
 
 execute at @e[limit=1,tag=m_cen] run forceload remove ~ ~
+
+#death_system
+scoreboard players reset @a d_cooldown
+
+
+
 
 #reset 
 

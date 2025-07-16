@@ -43,6 +43,7 @@ advancement grant @a only main:misson/38
 advancement grant @a only main:misson/39
 advancement grant @a only main:misson/40
 advancement grant @a only main:misson/43
+advancement grant @a only main:misson/49
 
 
 
@@ -111,7 +112,7 @@ scoreboard players set @a p_missonC 0
 function main:p_misson/tick
 
 
-
+scoreboard objectives add d_cooldown dummy
 
 #sp: for misson 18,47
 

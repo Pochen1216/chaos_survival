@@ -47,6 +47,11 @@ scoreboard objectives remove food
 scoreboard objectives remove y
 scoreboard objectives remove food_before
 scoreboard objectives remove food_regen
+scoreboard objectives remove temp5
+scoreboard objectives remove break_nsword
+scoreboard objectives remove lv_before
+scoreboard objectives remove detect_circle
+scoreboard objectives remove packour_num
 
 
 

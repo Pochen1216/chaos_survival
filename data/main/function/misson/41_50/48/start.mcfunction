@@ -1,6 +1,6 @@
-#掏爆黃金
+#力量越大，責任越大
 
-title @a title [{"text":"掏爆黃金","color":"white"}]
+title @a title [{"text":"力量越大，責任越大","color":"white"}]
 execute as @a at @s run playsound minecraft:entity.arrow.hit_player
 
 

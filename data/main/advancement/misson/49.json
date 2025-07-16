@@ -1,0 +1,18 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "effects": {
+            "minecraft:luck": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/41_50/49/get"
+  }
+}
