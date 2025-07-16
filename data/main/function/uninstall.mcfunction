@@ -52,6 +52,15 @@ scoreboard objectives remove break_nsword
 scoreboard objectives remove lv_before
 scoreboard objectives remove detect_circle
 scoreboard objectives remove packour_num
+scoreboard objectives remove lv_now
+scoreboard objectives remove d_cooldown
+scoreboard objectives remove break
+scoreboard objectives remove point
+scoreboard objectives remove break_gpickaxe
+scoreboard objectives remove flying
+scoreboard objectives remove detect_seye
+scoreboard objectives remove event_num
+scoreboard objectives remove ore_count
 
 
 
@@ -74,6 +83,9 @@ scoreboard objectives remove rod_count
 scoreboard objectives remove cry_obby_count
 scoreboard objectives remove dia_armor_count
 
+
+gamerule sendCommandFeedback true
+gamerule doImmediateRespawn false
 
 
 tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n[\u7cfb\u7d71]","color":"gold"},{"text":"\u5378\u8f09\u5b8c\u6210\uff0c\u518d\u6b21\u4f7f\u7528\u8acb\u6253/reload","color":"white"}]
