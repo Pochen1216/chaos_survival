@@ -1,0 +1,11 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "rewards": {
+    "function": "main:misson/31_40/40/get"
+  }
+}

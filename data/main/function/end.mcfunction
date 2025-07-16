@@ -11,6 +11,8 @@ tag @a remove misson10
 tag @a remove misson16
 tag @a remove misson32
 tag @a remove misson33
+tag @a remove misson38
+tag @a remove misson39
 tag @a remove win
 effect clear @a
 

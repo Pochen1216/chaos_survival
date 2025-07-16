@@ -1,0 +1,21 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:lightning_strike",
+      "conditions": {
+        "lightning": {
+          "distance": {
+            "horizontal": {
+              "min": 0,
+              "max": 3
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/31_40/39/get"
+  }
+}   

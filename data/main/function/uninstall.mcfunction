@@ -2,6 +2,8 @@
 
 function main:end
 
+
+tag @a remove sowin
 kill @e[tag=m_cen]
 kill @e[tag=a_cen]
 kill @e[tag=tp]
