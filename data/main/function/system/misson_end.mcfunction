@@ -22,6 +22,7 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e0b\u4e00\u9
 
 
 
+
 #timer
 scoreboard players set @e[tag=m_cen,limit=1] misson_countdown -1
 

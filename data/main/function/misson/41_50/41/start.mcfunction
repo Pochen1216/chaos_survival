@@ -13,7 +13,7 @@ scoreboard objectives add packour_num dummy
 scoreboard players set @a packour_num 0
 
 
-execute store result score @e[tag=m_cen] packour_num run random roll 1..3
+execute store result score @e[tag=m_cen] packour_num run random value 1..3
 
 
 execute if score @e[tag=m_cen,limit=1] packour_num matches 1 as @a at @s run place template main:41_1 ~-1 ~-1 ~-1
