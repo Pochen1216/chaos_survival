@@ -62,7 +62,13 @@ scoreboard objectives remove detect_seye
 scoreboard objectives remove event_num
 scoreboard objectives remove ore_count
 scoreboard objectives remove respond
-
+scoreboard objectives remove be_hit_pl
+scoreboard objectives remove hit_pl
+scoreboard objectives remove temp2
+scoreboard objectives remove event_period
+scoreboard objectives remove event_countdown
+scoreboard objectives remove item_age
+scoreboard objectives remove temp3
 
 
 

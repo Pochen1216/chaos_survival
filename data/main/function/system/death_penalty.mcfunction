@@ -10,5 +10,5 @@ effect give @s weakness 1 255 true
 
 effect give @s minecraft:resistance 10 4 false
 
-
+attribute @s jump_strength base set 0
 

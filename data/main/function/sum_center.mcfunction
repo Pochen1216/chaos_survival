@@ -19,6 +19,6 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e2d\u592e\u9
 #設定基本值
 
 scoreboard players set @e[type=marker,limit=1,tag=m_cen] target 5
-
+scoreboard players set @e[type=marker,limit=1,tag=m_cen] event_period 1200
 
 

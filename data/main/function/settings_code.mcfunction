@@ -11,9 +11,12 @@ execute if score @s settings matches 21 run function main:settings/cc_on
 execute if score @s settings matches 22 run function main:settings/cc_off
 
 
-#event on:31 off:32
-execute if score @s settings matches 31 run function main:settings/event_on
-execute if score @s settings matches 32 run function main:settings/event_off
+#event off:31 on:32~35
+execute if score @s settings matches 31 run function main:settings/event_off
+execute if score @s settings matches 32 run function main:settings/event_30
+execute if score @s settings matches 33 run function main:settings/event_60
+execute if score @s settings matches 34 run function main:settings/event_90
+execute if score @s settings matches 35 run function main:settings/event_120
 
 
 #intro:50
@@ -29,8 +32,7 @@ execute if score @s settings matches 1000 run function main:sum_center
 
 #tellraw @a ["----------------------------\n目標分數: ",{"color":"gold","score":{"objective":"target","name":"@e[limit=1,tag=m_cen]"}}," ",{"text":"[+]","color":"green","click_event":{"action":"run_command","command":"/trigger settings set 11"}}," ",{"text":"[-]","color":"dark_red","click_event":{"action":"run_command","command":"/trigger settings set 12"}},"\n",{"text":"點我設定邊界大小","color":"dark_blue","underlined":true,"click_event":{"action":"suggest_command","command":"/worldborder set"},"hover_event":{"action":"show_text","command":"輸入你希望的邊界大小數字"}},"\n",{"text":"<開始遊戲>","color":"light_purple","click_event":{"action":"run_command","command":"/trigger settings set 150"}},"\n----------------------------"]
 
-tellraw @a ["",{"text":"----------------------------","color":"gray"},{"text":"\n"},{"text":"<\u9ede\u6211\u770b\u904a\u6232\u6559\u5b78>\n","color":"gold","click_event":{"action":"run_command","command":"trigger settings set 50"}},{"text":"\u76ee\u6a19\u5206\u6578: ","color":"white"},{"score":{"name":"@e[tag=m_cen,limit=1]","objective":"target"},"color":"gold"},{"text":" ","color":"gold"},{"text":"[+]","color":"green","click_event":{"action":"run_command","command":"/trigger settings set 11"}},{"text":" "},{"text":"[-]","color":"dark_red","click_event":{"action":"run_command","command":"trigger settings set 12"}},{"text":"\n\u7926\u7269\u514d\u71d2:"},{"text":" ","click_event":{"action":"run_command","command":"trigger settings set 21"}},{"text":"[\u958b]","color":"green","click_event":{"action":"run_command","command":"trigger settings set 21"}},{"text":" "},{"text":"[\u95dc]","color":"dark_red","click_event":{"action":"run_command","command":"trigger settings set 22"}},{"text":" \n\u96a8\u6a5f\u4efb\u52d9: "},{"text":"[\u958b]","color":"green","click_event":{"action":"run_command","command":"trigger settings set 31"}},{"text":" "},{"text":"[\u95dc]","color":"dark_red","click_event":{"action":"run_command","command":"trigger settings set 32"}},{"text":" \n"},{"text":"\n"},{"text":"<\u958b\u59cb\u904a\u6232>","color":"light_purple","click_event":{"action":"run_command","command":"/trigger settings set 150"}},{"text":"\n"},{"text":"----------------------------","color":"gray"}]
-
+tellraw @a ["",{"text":"----------------------------","color":"gray"},{"text":"\n"},{"text":"<\u9ede\u6211\u770b\u904a\u6232\u6559\u5b78>\n","color":"gold","click_event":{"action":"run_command","command":"trigger settings set 50"}},{"text":"\u76ee\u6a19\u5206\u6578: ","color":"white"},{"score":{"name":"@e[tag=m_cen,limit=1]","objective":"target"},"color":"gold"},{"text":" ","color":"gold"},{"text":"[+]","color":"green","click_event":{"action":"run_command","command":"/trigger settings set 11"}},{"text":" "},{"text":"[-]","color":"dark_red","click_event":{"action":"run_command","command":"trigger settings set 12"}},{"text":"\n\u7926\u7269\u514d\u71d2:"},{"text":" ","click_event":{"action":"run_command","command":"trigger settings set 21"}},{"text":"[\u958b]","color":"green","click_event":{"action":"run_command","command":"trigger settings set 21"}},{"text":" "},{"text":"[\u95dc]","color":"dark_red","click_event":{"action":"run_command","command":"trigger settings set 22"}},{"text":" \n"},"事件週期(秒): ",{"text":"[關]","color":"dark_red","click_event":{"action":"run_command","command":"trigger settings set 31"}}," ",{"text":"[30]","color":"gold","click_event":{"action":"run_command","command":"trigger settings set 32"}},{"text":" ","color":"gold"},{"text":"[60]","color":"gold","click_event":{"action":"run_command","command":"trigger settings set 33"}},{"text":" ","color":"gold"},{"text":"[90]","color":"gold","click_event":{"action":"run_command","command":"trigger settings set 34"}},{"text":" ","color":"gold"},{"text":"[120]","color":"gold","click_event":{"action":"run_command","command":"trigger settings set 35"}},{"text":" \n"},{"text":"\n"},{"text":"<\u958b\u59cb\u904a\u6232>","color":"light_purple","click_event":{"action":"run_command","command":"/trigger settings set 150"}},{"text":"\n"},{"text":"----------------------------","color":"gray"}]
 
 
 #--------------------------------------

@@ -1,5 +1,4 @@
 
-effect give @a night_vision 30 0 true
 
 execute as @a[scores={die=1..}] run gamemode spectator @s
 

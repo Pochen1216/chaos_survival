@@ -51,6 +51,8 @@ schedule clear main:misson/21_30/27/end
 schedule clear main:misson/31_40/34/end
 
 
+schedule clear main:system/clean_item
+
 #--------------------------------------
 #<混沌生存>
 #作者: Poal

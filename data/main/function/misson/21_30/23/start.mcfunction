@@ -11,8 +11,8 @@ tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"10\u79d2\u5f8c\
 
 function main:system/sum_marker/start
 
-scoreboard players set @e[tag=m_cen] misson_countdown 200
-bossbar set minecraft:misson_timer max 200
+scoreboard players set @e[tag=m_cen] misson_countdown 210
+bossbar set minecraft:misson_timer max 210
 
 schedule function main:misson/21_30/23/true_start 10s
 

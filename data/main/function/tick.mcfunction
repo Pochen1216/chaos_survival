@@ -19,3 +19,4 @@ execute if entity @e[tag=in_game] run function main:system/tick_in_game
 worldborder set 5000
 
 
+worldborder set 10000000

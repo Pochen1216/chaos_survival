@@ -1,5 +1,5 @@
 
-execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..50
+
 
 tellraw @a {"text":"-------------------------------------\n","color":"gray"}
 

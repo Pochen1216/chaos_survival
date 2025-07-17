@@ -15,9 +15,17 @@ execute as @a[scores={deaths=1..}] run scoreboard players set @s deaths 0
 execute as @a[scores={d_cooldown=1..}] run function main:system/death_penalty
 execute as @a[scores={d_cooldown=1..}] run scoreboard players remove @s d_cooldown 1
 
+execute as @a[scores={d_cooldown=0}] run attribute @s minecraft:jump_strength base reset
+
+
 #cut_clean
 execute if entity @e[tag=m_cen,tag=cut_clean] run function main:system/cut_clean/tick
 
+#event
+
+scoreboard players remove @e[tag=m_cen,tag=do_event] event_countdown 1
+execute if entity @e[tag=m_cen,tag=do_event,scores={event_countdown=..0}] run function main:event/go
+execute as @e[tag=m_cen,tag=do_event,scores={event_countdown=..0}] run scoreboard players operation @s event_countdown = @s event_period
 
 
 #倒數bossbar

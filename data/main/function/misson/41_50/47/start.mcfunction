@@ -5,7 +5,8 @@ execute as @a at @s run playsound minecraft:entity.arrow.hit_player
 
 
 #[任務]率先升一等的人得一分!
-tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u7387\u5148\u7528\u7206\u4e00\u500b\u91d1\u93ac\u7684\u4eba\u5f97\u4e00\u5206!","color":"white"}]
+tellraw @a ["",{"text":"[\u4e8b\u4ef6]","color":"aqua"},{"text":"\u7387\u5148\u5347\u4e00\u7b49\u7684\u4eba\u5f97\u4e00\u5206!","color":"white"}]
+
 
 scoreboard objectives add lv_before dummy
 
