@@ -1,6 +1,6 @@
 
 
-execute as @a[scores={respond=-1}] run effect give @s poison 30 1 true
+execute as @a[scores={respond=-1}] run effect give @s poison 30 1 false
 
 execute as @a[scores={respond=1}] run tag @s add win
 

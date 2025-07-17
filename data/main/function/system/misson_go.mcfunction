@@ -1,4 +1,6 @@
 
+execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..50
+
 tellraw @a {"text":"-------------------------------------\n","color":"gray"}
 
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=1},limit=1] run function main:misson/1_10/1/start
