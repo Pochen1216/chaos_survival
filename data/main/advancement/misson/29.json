@@ -2,7 +2,23 @@
   "parent": "main:root",
   "criteria": {
     "a": {
-      "trigger": "minecraft:started_riding"
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": [
+              "minecraft:horse",
+              "minecraft:donkey",
+              "minecraft:mule",
+              "minecraft:camel",
+              "minecraft:skeleton_horse",
+              "minecraft:zombie_horse",
+              "minecraft:pig",
+              "minecraft:strider"
+            ]
+          }
+        }
+      }
     }
   },
   "rewards": {
