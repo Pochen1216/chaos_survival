@@ -2,6 +2,8 @@
 scoreboard players operation 目前時間 info = @e[tag=m_cen,limit=1] all_timer
 scoreboard players operation 目標勝利次數 info = @e[tag=m_cen,limit=1] target
 
+effect give @a night_vision infinite 2 true
+
 
 execute as @a[scores={deaths=1..}] run scoreboard players set @s d_cooldown 400
 #[系統]你因死亡，受到了20秒的僵直懲罰!

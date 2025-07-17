@@ -61,7 +61,7 @@ scoreboard objectives remove flying
 scoreboard objectives remove detect_seye
 scoreboard objectives remove event_num
 scoreboard objectives remove ore_count
-
+scoreboard objectives remove respond
 
 
 

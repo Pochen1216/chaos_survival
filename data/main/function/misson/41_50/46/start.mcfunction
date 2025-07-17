@@ -14,7 +14,7 @@ scoreboard players set @a break_gpickaxe 0
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200
 
-schedule function main:misson/41_50/48/tick 5t
+schedule function main:misson/41_50/46/tick 5t
 
 
 

@@ -5,6 +5,7 @@ kill @e[type=end_crystal]
 data modify entity @e[type=minecraft:ender_dragon,limit=1] DragonPhase set value 3
 
 #predicate 19 means who is in end
+execute at @e[tag=m_cen,limit=1] run fill ~2 ~2 ~2 ~-2 ~-2 ~-2 air replace lava
 execute as @a at @s unless predicate main:misson/19 at @e[tag=m_cen,limit=1] run tp @s ~ ~3 ~
 
 #tp @s @e[tag=m_cen,limit=1]
