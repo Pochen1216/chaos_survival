@@ -39,6 +39,7 @@ scoreboard players reset @a admin
 
 gamemode adventure @a
 scoreboard objectives remove armor_value
+execute as @a run attribute @s jump_strength base reset
 
 schedule clear main:system/all_timer
 schedule clear main:system/misson_go

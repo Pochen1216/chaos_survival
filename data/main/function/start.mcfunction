@@ -61,7 +61,8 @@ advancement grant @a only main:misson/49
 give @a[team=!spec] minecraft:stone_sword 1
 give @a[team=!spec] minecraft:stone_pickaxe[enchantments={'minecraft:efficiency':3}] 1
 give @a[team=!spec] minecraft:stone_axe[enchantments={'minecraft:efficiency':3}] 1
-give @a[team=!spec] bread 5
+give @a[team=!spec] minecraft:stone_shovel 1
+give @a[team=!spec] bread 16
 effect give @a saturation 10 100 true
 effect give @a instant_health 1 100 true
 effect give @a resistance 10 4 false

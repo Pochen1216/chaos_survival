@@ -15,7 +15,7 @@ execute as @a[scores={deaths=1..}] run scoreboard players set @s deaths 0
 execute as @a[scores={d_cooldown=1..}] run function main:system/death_penalty
 execute as @a[scores={d_cooldown=1..}] run scoreboard players remove @s d_cooldown 1
 
-execute as @a[scores={d_cooldown=0}] run attribute @s minecraft:jump_strength base reset
+execute as @a[scores={d_cooldown=..0}] run attribute @s minecraft:jump_strength base reset
 
 
 #cut_clean
@@ -44,7 +44,7 @@ execute as @a[scores={admin=1}] run scoreboard players set @s admin 0
 #-----------------------------------
 
 #new pl
-execute as @a[team=!spec,tag=pl] run gamemode spectator @s
-execute as @a[team=!spec,tag=pl] run team join spec
+execute as @a[team=!spec,tag=!pl] run gamemode spectator @s
+execute as @a[team=!spec,tag=!pl] run team join spec
 
 
