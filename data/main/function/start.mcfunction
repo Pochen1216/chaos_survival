@@ -1,4 +1,13 @@
 
+
+#spec
+team add spec
+team modify spec prefix {"text":"[旁觀]","color":"gray"}
+team modify spec color gray
+team join spec @a[gamemode=spectator]
+tag @a[team=!spec] add pl
+tp @a[team=spec] @e[limit=1,tag=m_cen]
+
 execute as @a at @s run playsound minecraft:block.bell.use
 
 clear @a
@@ -20,7 +29,7 @@ execute as @e[type=marker,tag=m_cen] run scoreboard players set @s all_timer 0
 schedule function main:system/all_timer 60s
 
 #tp
-execute as @a at @e[limit=1,tag=m_cen] run spreadplayers ~ ~ 0 100 true @s
+execute as @a[team=!spec] at @e[limit=1,tag=m_cen] run spreadplayers ~ ~ 0 100 true @s
 advancement revoke @a from minecraft:story/root
 advancement revoke @a from minecraft:adventure/root
 advancement revoke @a from minecraft:nether/root
@@ -49,10 +58,10 @@ advancement grant @a only main:misson/49
 
 
 #給工具
-give @a minecraft:stone_sword 1
-give @a minecraft:stone_pickaxe[enchantments={'minecraft:efficiency':3}] 1
-give @a minecraft:stone_axe[enchantments={'minecraft:efficiency':3}] 1
-give @a bread 5
+give @a[team=!spec] minecraft:stone_sword 1
+give @a[team=!spec] minecraft:stone_pickaxe[enchantments={'minecraft:efficiency':3}] 1
+give @a[team=!spec] minecraft:stone_axe[enchantments={'minecraft:efficiency':3}] 1
+give @a[team=!spec] bread 5
 effect give @a saturation 10 100 true
 effect give @a instant_health 1 100 true
 effect give @a resistance 10 4 false
@@ -60,7 +69,7 @@ effect give @a resistance 10 4 false
 gamerule keepInventory true
 execute at @e[limit=1,tag=m_cen] run spawnpoint @a
 
-xp set @a 0 points
+xp set @a 0 levels
 
 
 #免燒
@@ -91,7 +100,7 @@ execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m
 tellraw @a[gamemode=creative] [{"text":"[提示]遊戲中使用/trigger admin可開啟管理員面板","color":"gray"}]
 #execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..50
 
-gamemode survival @a
+gamemode survival @a[team=!spec]
 time set day
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
@@ -124,6 +133,10 @@ scoreboard objectives add d_cooldown dummy
 #item_age
 scoreboard objectives add item_age dummy
 schedule function main:system/clean_item 1t
+
+
+
+
 
 #sp: for misson 18,47
 

@@ -19,7 +19,7 @@ advancement revoke @a only main:misson/32
 
 tag @a add misson32
 
-execute as @a at @s run summon enderman ~ ~4 ~
+execute as @a[team=!spec] at @s run summon enderman ~ ~3 ~
 
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200

@@ -1,20 +1,20 @@
 
 #1p
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:redstone"}}}] run function main:misson/31_40/35/ore/redstone
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:coal"}}}] run function main:misson/31_40/35/ore/coal
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:copper_ingot"}}}] run function main:misson/31_40/35/ore/copper
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:redstone"}}}] run function main:misson/31_40/35/ore/redstone
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:coal"}}}] run function main:misson/31_40/35/ore/coal
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:copper_ingot"}}}] run function main:misson/31_40/35/ore/copper
 
 #2p
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:lapis_lazuli"}}}] run function main:misson/31_40/35/ore/lapis
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:lapis_lazuli"}}}] run function main:misson/31_40/35/ore/lapis
 
 
 #5p
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:iron_ingot"}}}] run function main:misson/31_40/35/ore/iron
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:gold_ingot"}}}] run function main:misson/31_40/35/ore/gold
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:iron_ingot"}}}] run function main:misson/31_40/35/ore/iron
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:gold_ingot"}}}] run function main:misson/31_40/35/ore/gold
 
 
 #30p
-execute as @a[nbt={equipment:{offhand:{id:"minecraft:diamond"}}}] run function main:misson/31_40/35/ore/diamond
+execute as @a[team=!spec,nbt={equipment:{offhand:{id:"minecraft:diamond"}}}] run function main:misson/31_40/35/ore/diamond
 
 
 

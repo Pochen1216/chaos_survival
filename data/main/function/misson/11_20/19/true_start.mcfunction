@@ -19,4 +19,4 @@ bossbar set minecraft:misson_timer max 3600
 
 schedule function main:misson/11_20/19/tick 1t
 
-
+execute in the_end run tp @e[team=spec] 0 100 0

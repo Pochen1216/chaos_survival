@@ -1,6 +1,6 @@
 
 
-execute as @a run function main:misson/31_40/31/check
+execute as @a[team=!spec] run function main:misson/31_40/31/check
 
 
 

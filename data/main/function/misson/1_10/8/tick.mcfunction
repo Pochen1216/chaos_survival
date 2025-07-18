@@ -1,6 +1,6 @@
 
 
-execute as @a store result score @s item_count run data get entity @s Inventory
+execute as @a[team=!spec] store result score @s item_count run data get entity @s Inventory
 
 
 #如果有贏家

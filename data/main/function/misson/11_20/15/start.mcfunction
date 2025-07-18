@@ -7,7 +7,7 @@ execute as @a at @s run playsound minecraft:entity.arrow.hit_player
 tellraw @a [{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u5305\u5305\u88e1\u88ab\u585e\u4e86\u67d0\u500b\u4e0d\u5c6c\u65bc\u4f60\u7684\u6771\u897f\uff0c\u5148\u5c07\u5b83\u6254\u6389\u7684\u73a9\u5bb6\u7372\u5f97\u4e00\u5206!","color":"white"}]
 
 scoreboard objectives add detect_pane dummy
-give @a light_gray_stained_glass_pane 1
+give @a[team=!spec] light_gray_stained_glass_pane 1
 
 
 

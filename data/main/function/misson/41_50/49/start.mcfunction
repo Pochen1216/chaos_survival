@@ -17,19 +17,19 @@ bossbar set minecraft:misson_timer max 600
 advancement revoke @a only main:misson/49
 tag @a add misson49
 
-give @a emerald 1
+give @a[team=!spec] emerald 1
 
 #wrong
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:barrier,count:1},sell:{id:barrier,count:1}}]},Tags:["misson"]}
 
 #right
-execute as @a at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:emerald,count:1},sell:{id:cooked_beef,count:64}}]},Tags:["misson"],active_effects:[{id:luck,duration:100000,amplifier:0,show_particles:0b}]}
+execute as @a[team=!spec] at @s run summon villager ~ ~ ~ {VillagerData:{type:plains,profession:nitwit,level:99},Offers:{Recipes:[{maxUses:1,rewardExp:0b,buy:{id:emerald,count:1},sell:{id:cooked_beef,count:64}}]},Tags:["misson"],active_effects:[{id:luck,duration:100000,amplifier:0,show_particles:0b}]}
 
 schedule function main:misson/41_50/49/tick 5t
 

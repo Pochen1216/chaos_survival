@@ -11,7 +11,7 @@ scoreboard objectives add counter dummy
 scoreboard players set @a counter 0
 
 
-execute as @a at @s run summon marker ~ ~ ~ {Tags:[misson,structure]}
+execute as @a[team=!spec] at @s run summon marker ~ ~ ~ {Tags:[misson,structure]}
 execute as @e[type=marker,tag=structure] at @s run place template main:17 ~ ~-1 ~
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200

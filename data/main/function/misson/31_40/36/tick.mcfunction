@@ -1,6 +1,6 @@
 
 
-execute as @a if predicate main:misson/36 run tag @s add win
+execute as @a[team=!spec] if predicate main:misson/36 run tag @s add win
 
 #timeout
 

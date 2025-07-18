@@ -1,3 +1,3 @@
 
-scoreboard players set @s be_hit_pl 1
+scoreboard players set @s[team=!spec] be_hit_pl 1
 

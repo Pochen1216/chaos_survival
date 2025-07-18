@@ -37,7 +37,7 @@ bossbar set minecraft:misson_timer max 1200
 
 scoreboard objectives add hot_potato dummy
 scoreboard players set @a hot_potato 0
-scoreboard players set @r hot_potato 1
+scoreboard players set @r[team=!spec] hot_potato 1
 
 execute as @a[scores={hot_potato=1}] run function main:misson/21_30/25/pass
 

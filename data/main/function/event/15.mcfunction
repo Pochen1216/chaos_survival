@@ -9,7 +9,7 @@ tellraw @a ["",{"text":"[\u4e8b\u4ef6]","color":"blue"},{"text":"\u7531\u65bc\u6
 
 
 
-give @a cobblestone 1600
+give @a[team=!spec] cobblestone 1600
 
 
 

@@ -9,7 +9,7 @@ tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u5df2\u70ba\u6
 scoreboard objectives add break minecraft.broken:minecraft.wooden_hoe
 scoreboard players set @a break 0
 
-give @a wooden_hoe
+give @a[team=!spec] wooden_hoe
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200

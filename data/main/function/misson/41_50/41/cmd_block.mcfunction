@@ -1,5 +1,5 @@
 
 
-scoreboard players add @p packour_num 1
+scoreboard players add @p[team=!spec] packour_num 1
 
 

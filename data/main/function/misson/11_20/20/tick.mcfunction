@@ -1,6 +1,6 @@
 
 
-execute as @a at @s if block ~ ~-1 ~ bedrock run function main:misson/11_20/20/end
+execute as @a[team=!spec] at @s if block ~ ~-1 ~ bedrock run function main:misson/11_20/20/end
 execute as @a at @s if block ~ ~-1 ~ bedrock run return 0
 
 

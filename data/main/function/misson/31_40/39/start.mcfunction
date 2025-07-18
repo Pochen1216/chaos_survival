@@ -19,7 +19,7 @@ advancement revoke @a only main:misson/39
 
 tag @a add misson39
 
-give @a minecraft:trident[minecraft:enchantments={channeling:1}]
+give @a[team=!spec] minecraft:trident[minecraft:enchantments={channeling:1}]
 weather thunder
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200

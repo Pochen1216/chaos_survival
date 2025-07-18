@@ -1,6 +1,6 @@
 
 
-execute as @a store result score @s y run data get entity @s Pos[1]
+execute as @a[team=!spec] store result score @s y run data get entity @s Pos[1]
 
 
 

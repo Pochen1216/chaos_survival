@@ -1,15 +1,15 @@
 
 scoreboard objectives add temp2 dummy
 scoreboard players set temp temp2 0
-execute as @a run scoreboard players operation temp temp2 > @s point
+execute as @a[team=!spec] run scoreboard players operation temp temp2 > @s point
 
-execute as @a if score @s point = temp temp2 run tag @s add win
+execute as @a[team=!spec] if score @s point = temp temp2 run tag @s add win
 
 scoreboard objectives remove temp2
 
 
 #[任務]@s的點數: @s->point
-execute as @a run tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"selector":"@s","color":"dark_green"},{"text":"\u7684\u9ede\u6578: ","color":"white"},{"score":{"name":"@s","objective":"point"},"color":"gold"}]
+execute as @a[team=!spec] run tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"selector":"@s","color":"dark_green"},{"text":"\u7684\u9ede\u6578: ","color":"white"},{"score":{"name":"@s","objective":"point"},"color":"gold"}]
 
 
 
@@ -26,5 +26,5 @@ scoreboard players add @a[tag=win] score 1
 
 
 
- function main:system/misson_end
+function main:system/misson_end
 

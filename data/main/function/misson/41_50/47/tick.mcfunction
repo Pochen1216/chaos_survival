@@ -14,6 +14,6 @@ execute unless score @e[tag=m_cen,limit=1] misson_countdown matches ..1 run sche
 
 
 #如果有贏家
-execute as @a if score @s lv_now >= @s lv_before run tag @s add win
+execute as @a[team=!spec] if score @s lv_now >= @s lv_before run tag @s add win
 execute if entity @a[tag=win] run function main:misson/41_50/47/end
 

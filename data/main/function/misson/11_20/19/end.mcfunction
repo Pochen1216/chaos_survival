@@ -22,7 +22,7 @@ execute as @e[type=ender_dragon] run kill @s
 function main:system/sum_marker/run_tp
 function main:system/sum_marker/stop
 
-
+execute as @e[tag=m_cen] at @s run tp @a[team=spec] @s
 
 function main:system/misson_end
 

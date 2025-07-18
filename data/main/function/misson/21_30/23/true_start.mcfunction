@@ -34,7 +34,7 @@ bossbar set minecraft:misson_timer max 2400
 
 execute as @e[tag=m_cen] at @s run place template main:23 ~ 150 ~
 execute as @a at @e[tag=m_cen] run spreadplayers ~8 ~8 5 6 under 153 true @s
-
+execute as @e[tag=m_cen] at @s run tp @a[team=spec] ~ 152 ~
 
 
 

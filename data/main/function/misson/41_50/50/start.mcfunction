@@ -10,7 +10,7 @@ tellraw @a ["",{"text":"[\u4e8b\u4ef6]","color":"aqua"},{"text":"\u56de\u7b54\u4
 
 scoreboard objectives add respond trigger
 scoreboard players set @a respond 0
-scoreboard players enable @a respond
+scoreboard players enable @a[team=!spec] respond
 
 execute store result score @e[tag=m_cen,limit=1] respond run random value 1..3
 execute if entity @e[tag=m_cen,scores={respond=1}] run function main:misson/41_50/50/question/1

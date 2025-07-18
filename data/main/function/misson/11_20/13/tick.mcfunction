@@ -1,6 +1,6 @@
 
 
-execute as @a store result score @s detect_table run clear @s minecraft:crafting_table 0
+execute as @a[team=!spec] store result score @s detect_table run clear @s minecraft:crafting_table 0
 
 
 #如果有贏家

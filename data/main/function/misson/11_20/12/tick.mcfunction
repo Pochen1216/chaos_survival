@@ -1,6 +1,6 @@
 
 
-execute as @a store success score @s detect_grass run clear @s minecraft:short_grass 0
+execute as @a[team=!spec] store success score @s detect_grass run clear @s minecraft:short_grass 0
 
 
 #如果有贏家

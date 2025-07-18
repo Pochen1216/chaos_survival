@@ -1,5 +1,5 @@
 
-gamemode survival @a
+gamemode survival @a[team=!spec]
 scoreboard objectives setdisplay list score
 effect give @a resistance 10 4 false
 effect give @a instant_health 1 10 true

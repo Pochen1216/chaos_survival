@@ -14,9 +14,9 @@ give @a arrow 64
 scoreboard objectives add bow_score dummy
 scoreboard players set @a bow_score 0
 
-execute as @a at @s run place template main:24 ~-1 ~-1 ~-5
+execute as @a[team=!spec] at @s run place template main:24 ~-1 ~-1 ~-5
 
-execute as @a run attribute @s minecraft:gravity base set 10
+execute as @a[team=!spec] run attribute @s minecraft:gravity base set 10
 
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200

@@ -14,7 +14,7 @@ scoreboard objectives add die deathCount
 scoreboard players set @a die 0
 
 #[任務]抽獎按鈕 -><熠熠生輝的抽獎按鈕>
-tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u62bd\u734e\u6309\u9215 ->","color":"white"},{"text":"<\u71a0\u71a0\u751f\u8f1d\u7684\u62bd\u734e\u6309\u9215>","color":"gold","click_event":{"action":"run_command","command":"trigger lottery set 1"}}]
+tellraw @a[team=!spec] ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u62bd\u734e\u6309\u9215 ->","color":"white"},{"text":"<\u71a0\u71a0\u751f\u8f1d\u7684\u62bd\u734e\u6309\u9215>","color":"gold","click_event":{"action":"run_command","command":"trigger lottery set 1"}}]
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200
