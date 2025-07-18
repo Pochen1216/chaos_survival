@@ -4,6 +4,8 @@ function main:end
 
 
 tag @a remove sowin
+tag @a remove pl
+team remove spec
 kill @e[tag=m_cen]
 kill @e[tag=a_cen]
 kill @e[tag=tp]
