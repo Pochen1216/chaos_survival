@@ -31,7 +31,8 @@ execute at @e[limit=1,tag=m_cen] run forceload remove ~ ~
 #death_system
 scoreboard players reset @a d_cooldown
 
-
+#admin
+scoreboard players reset @a admin
 
 
 #reset 

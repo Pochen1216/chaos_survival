@@ -26,7 +26,7 @@ execute if score @s settings matches 50 run tellraw @a ["",{"text":"------------
 execute if score @s settings matches 150 run function main:ready
 
 
-#生成中心
+#生成中心:1000
 execute if score @s settings matches 1000 run function main:sum_center
 
 

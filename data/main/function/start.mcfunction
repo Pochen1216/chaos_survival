@@ -88,7 +88,7 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u5c07\u572830\
 schedule function main:system/misson_countdown 30s
 execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..50
 
-
+tellraw @a[gamemode=creative] [{"text":"[提示]遊戲中使用/trigger admin可開啟管理員面板","color":"gray"}]
 #execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..50
 
 gamemode survival @a

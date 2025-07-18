@@ -12,6 +12,7 @@ scoreboard objectives add die deathCount
 scoreboard players set @a die 0
 
 scoreboard players set @a deaths -1
+effect clear @a resistance
 
 scoreboard objectives add human dummy
 scoreboard players set @e[tag=m_cen] human 0

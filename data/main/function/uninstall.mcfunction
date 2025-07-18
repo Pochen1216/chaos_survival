@@ -69,7 +69,8 @@ scoreboard objectives remove event_period
 scoreboard objectives remove event_countdown
 scoreboard objectives remove item_age
 scoreboard objectives remove temp3
-
+scoreboard objectives remove if_Onground
+scoreboard objectives remove admin
 
 
 
