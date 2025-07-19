@@ -135,7 +135,8 @@ scoreboard objectives add d_cooldown dummy
 scoreboard objectives add item_age dummy
 schedule function main:system/clean_item 1t
 
-
+#adv.
+advancement revoke @a from main:hidden/root
 
 
 

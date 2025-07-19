@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blaze_rod"
+    },
+    "title": {
+      "text": "以命換獎",
+      "color": "#1dd396"
+    },
+    "description": "在抽獎任務中，死亡同時抽到大獎",
+    "background": "minecraft:block/copper_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame": "challenge"
+  },
+  "parent": "main:hidden/11_1",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

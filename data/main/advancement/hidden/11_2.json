@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond"
+    },
+    "title": {
+      "text": "哇!一抽就大獎",
+      "color": "#1dd396"
+    },
+    "description": "在抽獎任務中，第一次抽獎就抽到大獎",
+    "background": "minecraft:block/copper_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "main:hidden/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

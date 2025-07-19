@@ -2,7 +2,7 @@
 
 function main:end
 
-
+advancement revoke @a from main:hidden/root
 tag @a remove sowin
 tag @a remove pl
 team remove spec

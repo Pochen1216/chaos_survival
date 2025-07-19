@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:baked_potato"
+    },
+    "title": {
+      "text": "(被)波及無辜",
+      "color": "#1dd396"
+    },
+    "description": "在Hot potato任務中，沒有Hot potato卻仍然被爆炸殺死",
+    "background": "minecraft:block/copper_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "main:hidden/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "player": {
+          "effects": {
+            "minecraft:unluck": {}
+          }
+        },
+        "entity": {
+
+        }
+      }
+    }
+  }
+}

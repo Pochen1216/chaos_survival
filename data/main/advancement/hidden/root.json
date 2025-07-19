@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "glass"
+    },
+    "title": {
+      "text": "混沌生存-隱藏成就",
+      "color": "#1dd396"
+    },
+    "description": "這邊的東西都不會加分，但很有趣",
+    "background": "minecraft:block/copper_block",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

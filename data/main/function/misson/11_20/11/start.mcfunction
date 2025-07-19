@@ -23,6 +23,15 @@ schedule function main:misson/11_20/11/tick 1t
 
 
 
+#advancement
+
+scoreboard objectives add lottery_count dummy
+scoreboard players set @a lottery_count 0
+scoreboard objectives add H health
+execute as @a run damage @s 0.0000001 generic_kill
+
+
+
 
 
 

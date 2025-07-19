@@ -51,6 +51,7 @@ schedule clear main:misson/11_20/19/true_start
 schedule clear main:misson/21_30/23/true_start
 schedule clear main:misson/21_30/27/end
 schedule clear main:misson/31_40/34/end
+schedule clear main:misson/51_60/55/end
 
 
 schedule clear main:system/clean_item

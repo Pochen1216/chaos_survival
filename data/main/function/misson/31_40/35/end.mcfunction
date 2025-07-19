@@ -12,7 +12,8 @@ scoreboard objectives remove temp2
 execute as @a[team=!spec] run tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"selector":"@s","color":"dark_green"},{"text":"\u7684\u9ede\u6578: ","color":"white"},{"score":{"name":"@s","objective":"point"},"color":"gold"}]
 
 
-
+#adv.
+advancement grant @a[scores={point=150..}] only main:hidden/35
 
 
 
