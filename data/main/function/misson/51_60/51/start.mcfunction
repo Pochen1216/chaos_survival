@@ -12,8 +12,8 @@ scoreboard objectives add mined_ds minecraft.mined:deepslate
 scoreboard players set @a mined_ds 0
 scoreboard players set @a mined_stone 0
 
-scoreboard players set @e[tag=m_cen] misson_countdown 600
-bossbar set minecraft:misson_timer max 600
+scoreboard players set @e[tag=m_cen] misson_countdown 1200
+bossbar set minecraft:misson_timer max 1200
 
 schedule function main:misson/51_60/51/end 60s
 

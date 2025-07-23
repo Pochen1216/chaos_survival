@@ -73,6 +73,11 @@ scoreboard objectives remove item_age
 scoreboard objectives remove temp3
 scoreboard objectives remove if_Onground
 scoreboard objectives remove admin
+scoreboard objectives remove mined_ds
+scoreboard objectives remove mined_stone
+scoreboard objectives remove lottery_count
+scoreboard objectives remove detect_obby
+scoreboard objectives remove total
 
 
 

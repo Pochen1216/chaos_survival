@@ -1,0 +1,11 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:voluntary_exile"
+    }
+  },
+  "rewards": {
+    "function": "main:misson/51_60/59/get"
+  }
+}

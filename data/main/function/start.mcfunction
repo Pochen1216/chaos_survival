@@ -41,18 +41,18 @@ advancement grant @a only main:root
 
 
 #給飽成就
-advancement grant @a only main:misson/9
-advancement grant @a only main:misson/10
-advancement grant @a only main:misson/25/be_hit
-advancement grant @a only main:misson/25/hit
-advancement grant @a only main:misson/29
-advancement grant @a only main:misson/32
-advancement grant @a only main:misson/33
-advancement grant @a only main:misson/38
-advancement grant @a only main:misson/39
-advancement grant @a only main:misson/40
-advancement grant @a only main:misson/43
-advancement grant @a only main:misson/49
+#advancement grant @a only main:misson/9
+#advancement grant @a only main:misson/10
+#advancement grant @a only main:misson/25/be_hit
+#advancement grant @a only main:misson/25/hit
+#advancement grant @a only main:misson/29
+#advancement grant @a only main:misson/32
+#advancement grant @a only main:misson/33
+#advancement grant @a only main:misson/38
+#advancement grant @a only main:misson/39
+#advancement grant @a only main:misson/40
+#advancement grant @a only main:misson/43
+#advancement grant @a only main:misson/49
 
 
 
@@ -96,7 +96,7 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u904a\u6232\u9
 #[系統]將在30秒後 指派第一項任務!
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u5c07\u572830\u79d2\u5f8c \u6307\u6d3e\u7b2c\u4e00\u9805\u4efb\u52d9!","color":"white"}]
 schedule function main:system/misson_countdown 30s
-execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..50
+execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..60
 
 tellraw @a[gamemode=creative] [{"text":"[提示]遊戲中使用/trigger admin可開啟管理員面板","color":"gray"}]
 #execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random roll 1..50
