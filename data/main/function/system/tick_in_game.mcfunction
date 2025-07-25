@@ -43,8 +43,17 @@ execute as @a[scores={admin=1}] run scoreboard players set @s admin 0
 #強制結束遊戲 -> <點我>
 #-----------------------------------
 
+
+#event22
+effect give @a[tag=e22_res] resistance 1 1 true
+
+
+
+
 #new pl
 execute as @a[team=!spec,tag=!pl] run gamemode spectator @s
 execute as @a[team=!spec,tag=!pl] run team join spec
+
+
 
 

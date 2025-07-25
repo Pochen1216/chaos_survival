@@ -82,7 +82,8 @@ scoreboard players set @a cc_iron 0
 scoreboard players set @a cc_gold 0
 scoreboard players set @a cc_copper 0
 
-
+#清大廳
+execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run fill ~-5 ~10 ~-5 ~6 ~13 ~6 air
 
 
 #forceload

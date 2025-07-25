@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:guster_banner_pattern"
+    },
+    "title": {
+      "text": "物盡其用",
+      "color": "#1dd396"
+    },
+    "description": "利用得分吸收器吸收5分",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "main:hidden/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

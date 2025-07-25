@@ -12,10 +12,13 @@ scoreboard objectives add respond trigger
 scoreboard players set @a respond 0
 scoreboard players enable @a[team=!spec] respond
 
-execute store result score @e[tag=m_cen,limit=1] respond run random value 1..3
+execute store result score @e[tag=m_cen,limit=1] respond run random value 1..6
 execute if entity @e[tag=m_cen,scores={respond=1}] run function main:misson/41_50/50/question/1
 execute if entity @e[tag=m_cen,scores={respond=2}] run function main:misson/41_50/50/question/2
 execute if entity @e[tag=m_cen,scores={respond=3}] run function main:misson/41_50/50/question/3
+execute if entity @e[tag=m_cen,scores={respond=4}] run function main:misson/41_50/50/question/4
+execute if entity @e[tag=m_cen,scores={respond=5}] run function main:misson/41_50/50/question/5
+execute if entity @e[tag=m_cen,scores={respond=6}] run function main:misson/41_50/50/question/6
 
 scoreboard players set @e[tag=m_cen] misson_countdown 600
 bossbar set minecraft:misson_timer max 600

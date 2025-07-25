@@ -17,7 +17,7 @@ scoreboard objectives remove temp2
 execute as @a[team=!spec] run tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"selector":"@s","color":"dark_green"},{"text":"的總挖掘數: ","color":"white"},{"score":{"name":"@s","objective":"total"},"color":"gold"}]
 
 #[系統]@a[tag=win]贏得了這回合!
-tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"selector":"@a[tag=win]","color":"green"},{"text":"\u8d0f\u5f97\u4e86\u9019\u56de\u5408!","color":"white"}]
+function main:system/win_tellraw
 execute as @a at @s run playsound minecraft:block.beacon.deactivate
 
 

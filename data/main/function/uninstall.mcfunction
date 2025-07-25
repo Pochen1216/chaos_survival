@@ -78,7 +78,9 @@ scoreboard objectives remove mined_stone
 scoreboard objectives remove lottery_count
 scoreboard objectives remove detect_obby
 scoreboard objectives remove total
+scoreboard objectives remove get_omen
 
+scoreboard objectives remove buy
 
 
 scoreboard objectives remove cc_copper

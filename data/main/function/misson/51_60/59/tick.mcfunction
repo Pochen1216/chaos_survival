@@ -1,5 +1,7 @@
 
 
+execute as @a store success score @s get_omen run effect clear @s raid_omen
+execute as @a[scores={get_omen=1..}] run effect give @s raid_omen 1 4 true
 
 
 #timeout

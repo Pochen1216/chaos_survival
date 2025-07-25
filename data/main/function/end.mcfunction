@@ -16,8 +16,14 @@ tag @a remove misson39
 tag @a remove misson40
 tag @a remove misson43
 tag @a remove misson49
+tag @a remove misson59
 tag @a remove win
 effect clear @a
+
+
+tag @a remove e22_buyed
+tag @a remove e22_p
+tag @a remove e22_res
 
 execute as @a run attribute @s minecraft:gravity base reset
 
@@ -40,6 +46,8 @@ scoreboard players reset @a admin
 gamemode adventure @a
 scoreboard objectives remove armor_value
 execute as @a run attribute @s jump_strength base reset
+execute as @a run attribute @s movement_speed base reset
+execute as @a run attribute @s minecraft:max_health base reset
 
 schedule clear main:system/all_timer
 schedule clear main:system/misson_go
