@@ -79,8 +79,14 @@ scoreboard objectives remove lottery_count
 scoreboard objectives remove detect_obby
 scoreboard objectives remove total
 scoreboard objectives remove get_omen
+scoreboard objectives remove detect_emer
+scoreboard objectives remove checkpoint
+
 
 scoreboard objectives remove buy
+scoreboard objectives remove e22_ach
+scoreboard objectives remove e22_add
+scoreboard objectives remove shoot
 
 
 scoreboard objectives remove cc_copper

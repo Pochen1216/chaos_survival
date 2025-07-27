@@ -4,6 +4,7 @@
 execute as @e[tag=m_cen] at @s run setblock ~ ~ ~ minecraft:end_portal
 execute as @e[tag=m_cen] run tp @a @s
 
+advancement revoke @a only main:hidden/19_det
 
 scoreboard players set @a deaths -1000
 

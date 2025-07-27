@@ -1,0 +1,16 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:bat"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/61_70/61/get"
+  }
+}

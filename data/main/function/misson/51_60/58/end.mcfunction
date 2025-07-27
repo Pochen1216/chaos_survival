@@ -26,6 +26,8 @@ execute as @a at @s run playsound minecraft:block.beacon.deactivate
 
 scoreboard players add @a[tag=win] score 1
 
+#adv
+execute as @a[scores={total=30..}] run advancement grant @s only main:hidden/58
 
 
 function main:system/misson_end

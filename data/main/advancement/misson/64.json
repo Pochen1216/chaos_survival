@@ -1,0 +1,14 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:rabbit"
+        }
+      }
+    }
+  },
+  "rewards": {}
+}

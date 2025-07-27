@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:white_bed"
+    },
+    "title": {
+      "text": "你...來幹嘛的?",
+      "color": "#1dd396"
+    },
+    "description": "在終界龍任務中，不曾對龍造成傷害",
+    "background": "minecraft:block/copper_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame": "task"
+  },
+  "parent": "main:hidden/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+      
+    }
+  }
+}

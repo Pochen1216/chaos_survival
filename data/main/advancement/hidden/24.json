@@ -1,0 +1,24 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bow"
+    },
+    "title": {
+      "text": "古希臘掌管射箭的神",
+      "color": "#1dd396"
+    },
+    "description": "在射箭任務中，命中率100%",
+    "background": "minecraft:bow",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame": "challenge"
+  },
+  "parent": "main:hidden/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+      
+    }
+  }
+}

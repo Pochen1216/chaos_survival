@@ -19,6 +19,9 @@ schedule clear main:misson/11_20/19/tick
 
 execute as @e[type=ender_dragon] run kill @s
 
+#adv
+advancement grant @a[team=!spec,advancements={main:hidden/19_det=false}] only main:hidden/19
+
 function main:system/sum_marker/run_tp
 function main:system/sum_marker/stop
 

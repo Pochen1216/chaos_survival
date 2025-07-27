@@ -18,6 +18,10 @@ execute as @a[team=!spec] at @s run place template main:24 ~-1 ~-1 ~-5
 
 execute as @a[team=!spec] run attribute @s minecraft:gravity base set 10
 
+#adv
+scoreboard objectives add shoot minecraft.used:bow
+scoreboard players set @a shoot 0
+
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200

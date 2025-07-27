@@ -16,6 +16,7 @@ execute as @a[scores={hot_potato=1}] if score @s detect_potato matches 0 run giv
 effect give @a[scores={hot_potato=1}] glowing 1 0 true
 effect give @a[scores={hot_potato=1}] speed 1 1 true
 effect give @a[scores={hot_potato=1}] resistance 1 1 true
+effect give @a[scores={hot_potato=1}] dolphins_grace 1 0 true
 team join 25 @a[scores={hot_potato=1}]
 team leave @a[scores={hot_potato=0}]
 
