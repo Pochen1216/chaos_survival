@@ -14,7 +14,7 @@ execute as @a at @s run playsound minecraft:block.beacon.deactivate
 scoreboard players add @a[tag=win] score 1
 
 
-tag @a remove misson57
+tag @a remove misson59
 
 function main:system/misson_end
 
