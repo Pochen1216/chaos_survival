@@ -9,9 +9,9 @@ tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"本任務至多
 tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"停止計時並受到僵直 ->","color":"white"},{"text":"<點我>","color":light_purple,click_event:{action:"run_command",command:"trigger stop"}}]
 
 
-scoreboard objectives add stop trigger
-scoreboard players set @a stop 0
-scoreboard players enable @a[team=!spec] stop
+scoreboard objectives add m67_stop trigger
+scoreboard players set @a m67_stop 0
+scoreboard players enable @a[team=!spec] m67_stop
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200

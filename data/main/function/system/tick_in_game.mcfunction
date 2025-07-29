@@ -50,9 +50,7 @@ effect give @a[tag=e22_res] resistance 1 1 true
 
 
 
-#new pl
-execute as @a[team=!spec,tag=!pl] run gamemode spectator @s
-execute as @a[team=!spec,tag=!pl] run team join spec
+
 
 
 

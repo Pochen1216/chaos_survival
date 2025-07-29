@@ -24,3 +24,5 @@ execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run tp @a ~ ~12 ~
 scoreboard players set @e[type=marker,limit=1,tag=m_cen] target 5
 scoreboard players set @e[type=marker,limit=1,tag=m_cen] event_period 1200
 
+gamemode adventure @a[gamemode=!creative]
+

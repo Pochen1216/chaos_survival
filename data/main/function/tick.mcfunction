@@ -16,7 +16,21 @@ title @a actionbar [{"text":"中央座標:(","color":"light_purple"},{"color":"l
 
 execute if entity @e[tag=in_game] run function main:system/tick_in_game
 
-worldborder set 5000
+#new pl
+
+execute as @a[team=!spec,tag=!pl] if entity @e[tag=in_game] run team join spec
+
+execute as @a[team=!spec,tag=!pl] if entity @e[tag=in_game] run gamemode spectator @s
+
+execute as @a[team=!spec,tag=!pl] if entity @e[tag=m_cen,tag=!in_game] run tp @s @e[tag=m_cen,tag=!in_game,limit=1]
+
+execute as @a[team=!spec,tag=!pl] if entity @e[tag=m_cen,tag=!in_game] run gamemode adventure
+
+tag @a add pl
+
+
+
+
 
 
 worldborder set 10000000

@@ -83,6 +83,20 @@ scoreboard objectives remove detect_emer
 scoreboard objectives remove checkpoint
 scoreboard objectives remove detect_hoe
 scoreboard objectives remove milk
+scoreboard objectives remove m68_1
+scoreboard objectives remove m68_2
+scoreboard objectives remove m68_3
+scoreboard objectives remove m68_4
+scoreboard objectives remove m68_5
+scoreboard objectives remove m68_6
+scoreboard objectives remove m68_7
+scoreboard objectives remove m68_8
+scoreboard objectives remove m68_9
+scoreboard objectives remove m69_1
+scoreboard objectives remove m69_2
+scoreboard objectives remove m69_3
+scoreboard objectives remove m69_4
+scoreboard objectives remove m67_stop
 
 
 scoreboard objectives remove buy
