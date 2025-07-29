@@ -2,7 +2,7 @@ give @a written_book[written_book_content={pages:[[["\n\n\n\n\n\n\n\n\n\n\n\n   
 
 
 
-
+#execute if entity @a[nbt={equipment:{offhand:{id:"minecraft:cobblestone"}}}]
 
 execute if entity @a[nbt={equipment:{offhand:{id:"minecraft:rotten_flesh",count:3}}}]
 

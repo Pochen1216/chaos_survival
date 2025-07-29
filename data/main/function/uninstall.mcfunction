@@ -81,6 +81,8 @@ scoreboard objectives remove total
 scoreboard objectives remove get_omen
 scoreboard objectives remove detect_emer
 scoreboard objectives remove checkpoint
+scoreboard objectives remove detect_hoe
+scoreboard objectives remove milk
 
 
 scoreboard objectives remove buy
