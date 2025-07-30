@@ -12,3 +12,11 @@ execute as @a[team=!spec] at @s run spreadplayers ~ ~ 0 50 false @e[type=marker,
 execute as @e[tag=e27,type=marker] at @s run summon minecraft:fireball ~ 200 ~ {Motion:[0,-0.1,0],acceleration_power:0.2,ExplosionPower:15}
 
 execute as @e[tag=e27,type=marker] at @s run kill @s
+
+
+
+
+execute as @e[type=fireball,nbt={ExplosionPower:15b}] at @s run particle dust{color:[1.0,0.0,0.0],scale:1} ~ 0 ~ 0.1 200 0.1 1 5000 force
+
+schedule function main:event/27_2 1s
+

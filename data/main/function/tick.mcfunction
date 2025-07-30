@@ -22,7 +22,10 @@ execute as @a[team=!spec,tag=!pl] if entity @e[tag=in_game] run team join spec
 
 execute as @a[team=!spec,tag=!pl] if entity @e[tag=in_game] run gamemode spectator @s
 
-execute as @a[team=!spec,tag=!pl] if entity @e[tag=m_cen,tag=!in_game] run tp @s @e[tag=m_cen,tag=!in_game,limit=1]
+#execute as @a[team=!spec,tag=!pl] if entity  run tp @s @e[tag=m_cen,tag=!in_game,limit=1]
+
+execute as @e[tag=m_cen,tag=!in_game] at @s run tp @a[team=!spec,tag=!pl] ~ ~12 ~
+
 
 execute as @a[team=!spec,tag=!pl] if entity @e[tag=m_cen,tag=!in_game] run gamemode adventure
 

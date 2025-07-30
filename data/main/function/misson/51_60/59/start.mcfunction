@@ -10,6 +10,8 @@ effect give @a bad_omen 60 0 true
 advancement revoke @a only main:misson/59
 
 scoreboard objectives add get_omen dummy
+scoreboard players set @a get_omen 0
+
 
 tag @a add misson59
 
