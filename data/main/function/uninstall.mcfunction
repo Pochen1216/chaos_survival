@@ -2,6 +2,8 @@
 
 function main:end
 
+
+execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run setblock ~ ~-1 ~ air
 advancement revoke @a from main:hidden/root
 tag @a remove sowin
 tag @a remove pl

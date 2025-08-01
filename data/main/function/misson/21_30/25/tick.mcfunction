@@ -11,6 +11,11 @@ clear @a[scores={hot_potato=0}] baked_potato[custom_name=[{"text":"HOT POTATO","
 execute as @a[scores={hot_potato=1}] store success score @s detect_potato run clear @s baked_potato[custom_name=[{"text":"HOT POTATO","color":"dark_red","bold":true}],lore=[[{"text":"你需要盡快將它脫手!","italic":false}],[{"text":"它只能藉由攻擊別人傳遞!","italic":false}],[{"text":"同時，你的能力獲得提升，","italic":false}],[{"text":"並有傳送到別人的能力!","italic":false}]],enchantment_glint_override=true,consumable={consume_seconds:1000,animation:none,has_consume_particles:0b},food={nutrition:1,saturation:1},unbreakable={},custom_data={hot_potato:1}] 0
 execute as @a[scores={hot_potato=1}] if score @s detect_potato matches 0 run give @s baked_potato[custom_name=[{"text":"HOT POTATO","color":"dark_red","bold":true}],lore=[[{"text":"你需要盡快將它脫手!","italic":false}],[{"text":"它只能藉由攻擊別人傳遞!","italic":false}],[{"text":"同時，你的能力獲得提升，","italic":false}],[{"text":"並有傳送到別人的能力!","italic":false}]],enchantment_glint_override=true,consumable={consume_seconds:1000,animation:none,has_consume_particles:0b},food={nutrition:1,saturation:1},unbreakable={},custom_data={hot_potato:1}] 1
 
+#解死亡冷卻
+execute as @a[scores={hot_potato=1}] if score @s d_cooldown matches 1.. run tellraw @s ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"透過馬鈴薯之力，你可以無視死亡僵直!",color:white}]
+execute as @a[scores={hot_potato=1}] if score @s d_cooldown matches 1.. run attribute @s minecraft:jump_strength base reset
+execute as @a[scores={hot_potato=1}] if score @s d_cooldown matches 1.. run scoreboard players set @s d_cooldown 0
+
 
 #鬼常駐效果
 effect give @a[scores={hot_potato=1}] glowing 1 0 true

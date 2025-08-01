@@ -11,7 +11,7 @@ execute as @e[type=minecraft:marker,limit=1,tag=m_cen] store result score @s cen
 
 execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run worldborder center ~ ~
 execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run setworldspawn ~ ~ ~
-
+execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run setblock ~ ~-1 ~ jigsaw
 
 #[系統]中央點生成完畢!
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e2d\u592e\u9ede\u751f\u6210\u5b8c\u7562!","color":"white"}] 

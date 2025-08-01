@@ -5,7 +5,7 @@ gamerule naturalRegeneration false
 #effect clear @a mining_fatigue
 #effect clear @s weakness
 #effect clear @a blindness
-scoreboard players reset @a d_cooldown
+scoreboard players set @a d_cooldown 0
 
 
 scoreboard objectives add die deathCount
