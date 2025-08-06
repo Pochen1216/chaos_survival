@@ -4,6 +4,7 @@ scoreboard players operation 目標勝利次數 info = @e[tag=m_cen,limit=1] tar
 
 effect give @a night_vision infinite 2 true
 
+execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run setblock ~ ~-1 ~ jigsaw
 
 execute as @a[scores={deaths=1..}] run scoreboard players add @s d_cooldown 400
 #[系統]你因死亡，受到了20秒的僵直懲罰!
@@ -42,6 +43,11 @@ execute as @a[scores={admin=1}] run scoreboard players set @s admin 0
 #改變勝利目標分 -> <點我>
 #強制結束遊戲 -> <點我>
 #-----------------------------------
+#展示中央座標
+execute as @a unless score @s d_cooldown matches 1.. run title @s actionbar [{"text":"中央座標:(","color":"light_purple"},{"color":"light_purple","score":{"objective":"cen_x","name":"@e[type=marker,limit=1,tag=m_cen]"}},{"color":"light_purple","text":","},{"color":"light_purple","score":{"objective":"cen_z","name":"@e[type=marker,limit=1,tag=m_cen]"}},{"color":"light_purple","text":")"}]
+execute as @a if score @s d_cooldown matches 1.. run scoreboard players operation @s d_sec = @s d_cooldown
+execute as @a if score @s d_cooldown matches 1.. run scoreboard players operation @s d_sec /= n20 d_sec
+execute as @a if score @s d_cooldown matches 1.. run title @s actionbar [{"text":"中央座標:(","color":"light_purple"},{"color":"light_purple","score":{"objective":"cen_x","name":"@e[type=marker,limit=1,tag=m_cen]"}},{"color":"light_purple","text":","},{"color":"light_purple","score":{"objective":"cen_z","name":"@e[type=marker,limit=1,tag=m_cen]"}},{"color":"light_purple","text":")"},{"text":"  "},{"text":"死亡僵直: ",color:"red"},{score:{"objective":"d_sec",name:"@s"},color:gold,bold:true}]
 
 
 #event22

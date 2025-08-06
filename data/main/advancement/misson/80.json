@@ -1,0 +1,16 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:ghast"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/71_80/80/get"
+  }
+}

@@ -13,6 +13,8 @@ execute as @a at @s run playsound minecraft:block.bell.use
 clear @a
 scoreboard players set @a score 0
 scoreboard players set @a deaths 0
+scoreboard objectives add d_sec dummy
+scoreboard players set n20 d_sec 20
 tag @a remove win
 tag @a remove sowin
 
@@ -97,7 +99,7 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u904a\u6232\u9
 #[系統]將在30秒後 指派第一項任務!
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u5c07\u572830\u79d2\u5f8c \u6307\u6d3e\u7b2c\u4e00\u9805\u4efb\u52d9!","color":"white"}]
 schedule function main:system/misson_countdown 30s
-execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..78
+execute as @e[limit=1,tag=m_cen] store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..80
 
 tellraw @a[gamemode=creative] [{"text":"[提示]遊戲中使用/trigger admin可開啟管理員面板","color":"gray"}]
 

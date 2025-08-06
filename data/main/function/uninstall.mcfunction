@@ -99,6 +99,7 @@ scoreboard objectives remove m69_2
 scoreboard objectives remove m69_3
 scoreboard objectives remove m69_4
 scoreboard objectives remove m67_stop
+scoreboard objectives remove get_damage
 
 
 scoreboard objectives remove buy

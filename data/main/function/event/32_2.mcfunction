@@ -1,0 +1,1 @@
+execute as @a[team=!spec] run attribute @s scale base reset

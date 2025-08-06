@@ -10,8 +10,6 @@ execute as @a run scoreboard players set @s settings 0
 execute unless entity @e[tag=in_game] run scoreboard players enable @a settings
 
 
-#展示中央座標
-title @a actionbar [{"text":"中央座標:(","color":"light_purple"},{"color":"light_purple","score":{"objective":"cen_x","name":"@e[type=marker,limit=1,tag=m_cen]"}},{"color":"light_purple","text":","},{"color":"light_purple","score":{"objective":"cen_z","name":"@e[type=marker,limit=1,tag=m_cen]"}},{"color":"light_purple","text":")"}]
 
 
 execute if entity @e[tag=in_game] run function main:system/tick_in_game
