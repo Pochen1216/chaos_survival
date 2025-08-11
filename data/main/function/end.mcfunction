@@ -28,7 +28,7 @@ tag @a remove e22_buyed
 tag @a remove e22_p
 tag @a remove e22_res
 
-execute as @a run attribute @s minecraft:gravity base reset
+
 
 team remove 25
 
@@ -38,7 +38,7 @@ function main:system/sum_marker/stop
 execute at @e[limit=1,tag=m_cen] run forceload remove ~ ~
 
 #death_system
-scoreboard players reset @a d_cooldown
+scoreboard players set @a d_cooldown 0
 
 #admin
 scoreboard players reset @a admin
@@ -51,6 +51,7 @@ scoreboard objectives remove armor_value
 execute as @a run attribute @s jump_strength base reset
 execute as @a run attribute @s movement_speed base reset
 execute as @a run attribute @s minecraft:max_health base reset
+execute as @a run attribute @s minecraft:gravity base reset
 
 schedule clear main:system/all_timer
 schedule clear main:system/misson_go

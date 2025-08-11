@@ -22,7 +22,7 @@ scoreboard players enable @a settings
 scoreboard objectives add admin trigger
 
 #[混沌生存]指令包安裝成功!
-tellraw @a ["",{"text":"[\u6df7\u6c8c\u751f\u5b58]","color":"gold",hover_event: {action:"show_text","value":{text:"v1.2.1"}}},{"text":"\u6307\u4ee4\u5305\u5b89\u88dd\u6210\u529f!","color":"white"}]
+tellraw @a ["",{"text":"[\u6df7\u6c8c\u751f\u5b58]","color":"gold",hover_event: {action:"show_text","value":{text:"v1.2.2"}}},{"text":"\u6307\u4ee4\u5305\u5b89\u88dd\u6210\u529f!","color":"white"}]
 
 
 

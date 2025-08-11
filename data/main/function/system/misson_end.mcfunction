@@ -18,6 +18,9 @@ execute as @a[tag=win,tag=e22_p,scores={e22_add=2}] run advancement grant @s[sco
 execute as @a[tag=win,tag=e22_p,scores={e22_add=2}] run scoreboard players set @s e22_add 0
 
 
+#timer
+scoreboard players set @e[tag=m_cen,limit=1,type=marker] misson_countdown -1
+
 
 #偵測結束
 execute as @a[tag=win] if score @s score >= @e[tag=m_cen,limit=1,type=marker] target run tag @s add sowin
@@ -35,8 +38,7 @@ tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e0b\u4e00\u9
 
 
 
-#timer
-scoreboard players set @e[tag=m_cen,limit=1,type=marker] misson_countdown -1
+
 
 schedule function main:system/misson_countdown 10s
 

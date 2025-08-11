@@ -1,0 +1,18 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {
+        "entity": {
+          "distance": {
+            "absolute": 0
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/81_90/82/get"
+  }
+}
