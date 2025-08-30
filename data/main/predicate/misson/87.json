@@ -1,0 +1,17 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "stepping_on": {
+      "biomes": [
+        "minecraft:swamp",
+        "minecraft:forest",
+        "minecraft:flower_forest",
+        "minecraft:dark_forest",
+        "minecraft:plains",
+        "minecraft:sunflower_plains",
+        "minecraft:meadow"
+      ]
+    }
+  }
+}
