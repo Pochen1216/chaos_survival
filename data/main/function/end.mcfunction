@@ -68,6 +68,13 @@ schedule clear main:misson/51_60/55/end
 
 schedule clear main:system/clean_item
 
+
+#cm
+scoreboard players reset @a cm_choose
+schedule clear main:system/cho_misson/tick
+
+
+
 #--------------------------------------
 #<混沌生存>
 #作者: Poal

@@ -8,6 +8,7 @@ scoreboard objectives add misson_num dummy
 scoreboard objectives add target dummy
 scoreboard objectives add event_num dummy
 scoreboard objectives add event_period dummy
+scoreboard objectives add cm_target dummy
 
 scoreboard objectives add info dummy
 
@@ -22,7 +23,7 @@ scoreboard players enable @a settings
 scoreboard objectives add admin trigger
 
 #[混沌生存]指令包安裝成功!
-tellraw @a ["",{"text":"[\u6df7\u6c8c\u751f\u5b58]","color":"gold",hover_event: {action:"show_text","value":{text:"v1.2.3"}}},{"text":"\u6307\u4ee4\u5305\u5b89\u88dd\u6210\u529f!","color":"white"}]
+tellraw @a ["",{"text":"[\u6df7\u6c8c\u751f\u5b58]","color":"gold",hover_event: {action:"show_text","value":{text:"v1.2.4"}}},{"text":"\u6307\u4ee4\u5305\u5b89\u88dd\u6210\u529f!","color":"white"}]
 
 
 

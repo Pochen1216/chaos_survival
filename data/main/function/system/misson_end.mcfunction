@@ -36,7 +36,7 @@ tellraw @a {"text":"\n-------------------------------------\n","color":"gray"}
 tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e0b\u4e00\u9805\u4efb\u52d9\u5c07\u572810\u79d2\u5f8c\u958b\u59cb!","color":"white"}]
 
 
-
+execute if score @e[limit=1,type=marker,tag=m_cen] cm_target matches 1.. run schedule function main:system/cho_misson/start 1s
 
 
 

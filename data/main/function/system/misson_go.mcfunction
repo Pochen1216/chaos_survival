@@ -1,4 +1,8 @@
 
+#cm
+scoreboard players reset @a cm_choose
+schedule clear main:system/cho_misson/tick
+
 
 
 tellraw @a {"text":"-------------------------------------\n","color":"gray"}

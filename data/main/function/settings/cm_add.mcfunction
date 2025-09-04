@@ -1,0 +1,1 @@
+scoreboard players add @e[tag=m_cen] cm_target 1
