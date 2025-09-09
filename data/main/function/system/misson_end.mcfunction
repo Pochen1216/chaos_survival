@@ -1,7 +1,7 @@
 
 
 
-execute store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..88
+execute store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..94
 
 #善後
 kill @e[tag=misson]

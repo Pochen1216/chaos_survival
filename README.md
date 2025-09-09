@@ -1,4 +1,4 @@
-cs_v1.2.4
+cs_v1.2.5
 你說的對，但是這是我做的「混沌生存」
 #--------------------------------------
 #「混沌生存」是一款多人生存對戰遊戲
@@ -22,6 +22,15 @@ spawn-protection=0
 
 作者:poal
 dc : Pochen1216
+
+自用筆記
+
+每次更新需要改動的地方:
+data\main\function\system\cho_misson\sum.mcfunction
+data\main\function\load.mcfunction
+data\main\function\start.mcfunction line 104
+data\main\function\system\misson_end.mcfunction
+
 
 
 

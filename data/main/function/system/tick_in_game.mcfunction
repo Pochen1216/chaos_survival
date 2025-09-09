@@ -4,7 +4,7 @@ scoreboard players operation 目標勝利次數 info = @e[tag=m_cen,limit=1] tar
 
 effect give @a night_vision infinite 2 true
 
-execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run setblock ~ ~-1 ~ jigsaw
+execute as @e[type=minecraft:marker,limit=1,tag=m_cen] at @s run setblock ~ ~-1 ~ test_block
 
 execute as @a[scores={deaths=1..}] run scoreboard players add @s d_cooldown 400
 #[系統]你因死亡，受到了20秒的僵直懲罰!
