@@ -1,0 +1,17 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:shulker",
+          "nbt": "{Tags:[misson,m96]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/91_100/96/get"
+  }
+}

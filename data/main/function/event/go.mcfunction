@@ -1,5 +1,5 @@
 #executed from main:system/all_timer
-execute store result score @e[tag=m_cen] event_num run random value 1..33
+execute store result score @e[tag=m_cen] event_num run random value 1..34
 
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={event_num=1},limit=1] run function main:event/1
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={event_num=2},limit=1] run function main:event/2

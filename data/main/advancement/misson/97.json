@@ -1,0 +1,17 @@
+{
+  "parent": "main:root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:mannequin"
+
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "main:misson/91_100/97/get"
+  }
+}
