@@ -1,7 +1,7 @@
 
 
 
-execute store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..94
+execute store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..100
 
 #善後
 kill @e[tag=misson]
@@ -33,14 +33,14 @@ execute if entity @a[tag=sowin] run return 0
 
 #[系統]下一項任務將在10秒後開始!
 tellraw @a {"text":"\n-------------------------------------\n","color":"gray"}
-tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e0b\u4e00\u9805\u4efb\u52d9\u5c07\u572810\u79d2\u5f8c\u958b\u59cb!","color":"white"}]
+tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"text":"\u4e0b\u4e00\u9805\u4efb\u52d9\u5c07\u572815\u79d2\u5f8c\u958b\u59cb!","color":"white"}]
 
 
 execute if score @e[limit=1,type=marker,tag=m_cen] cm_target matches 1.. run schedule function main:system/cho_misson/start 1s
 
 
 
-schedule function main:system/misson_countdown 10s
+schedule function main:system/misson_countdown 15s
 
 
 

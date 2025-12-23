@@ -95,4 +95,10 @@ execute if score @s cm_num matches 94 run tellraw @a[tag=cm_pl] [{"text":"[冰�
 execute if score @s cm_num matches 95 run tellraw @a[tag=cm_pl] [{"text":"[異端審判]","color":"green","click_event":{"action":"run_command","command":"/trigger cm_choose set 95 "},"hover_event":{"action":"show_text","value":" 附近生成了一隻女巫，率先擊殺得分! "}}]
 execute if score @s cm_num matches 96 run tellraw @a[tag=cm_pl] [{"text":"[拯救地球]","color":"green","click_event":{"action":"run_command","command":"/trigger cm_choose set 96 "},"hover_event":{"action":"show_text","value":" 重生點有一台導彈發射器，未阻止將會朝所有玩家發射相當可觀的炸彈，阻止的人得一分 "}}]
 execute if score @s cm_num matches 97 run tellraw @a[tag=cm_pl] [{"text":"[這裡不讓睡覺]","color":"green","click_event":{"action":"run_command","command":"/trigger cm_choose set 97 "},"hover_event":{"action":"show_text","value":" 生成一個躺著的人，把它砍死得一分 "}}]
+execute if score @s cm_num matches 98 run tellraw @a[tag=cm_pl] [{"text":"[同屬不同種]","color":"green","click_event":{"action":"run_command","command":"/trigger cm_choose set 98 "},"hover_event":{"action":"show_text","value":" 生成馬，驢，騾，殺掉正確生物的得一分 "}}]
+execute if score @s cm_num matches 99 run tellraw @a[tag=cm_pl] [{"text":"[碎形]","color":"green","click_event":{"action":"run_command","command":"/trigger cm_choose set 99 "},"hover_event":{"action":"show_text","value":" 把束口袋放進束口袋，再把這個束口袋放入另一個束口袋，重複4次，並將完成品放置副手 "}}]
+execute if score @s cm_num matches 100 run tellraw @a[tag=cm_pl] [{"text":"[印加寶藏]","color":"green","click_event":{"action":"run_command","command":"/trigger cm_choose set 100 "},"hover_event":{"action":"show_text","value":" 活動結束時每1寶石可以兌換為1鑽石，寶石數量最高可得一分，僅進行一輪，探索失敗將受到災厄懲罰 "}}]
+
+
+
 
