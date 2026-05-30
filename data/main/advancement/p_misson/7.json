@@ -3,7 +3,10 @@
     "icon": {
       "id": "minecraft:diamond_block"
     },
-    "title": "我鑽多到拿去繳稅",
+    "title": {
+      "text": "我鑽多到拿去繳稅",
+      "color": "#e59e06"
+    },
     "description": "繳交3個鑽石磚。置於副手上繳。你會因此獲得3分。",
     "frame": "challenge",
     "hidden": false

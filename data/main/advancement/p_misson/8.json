@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_chestplate"
+    },
+    "title": {
+      "text": "地獄行者",
+      "color": "#e59e06"
+    },
+    "description": "獲得任意獄髓裝備。你會因此獲得3分。",
+    "frame": "challenge",
+    "hidden": false
+  },
+  "parent": "main:p_misson/5",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "main:p_misson/8/reward"
+  }
+}

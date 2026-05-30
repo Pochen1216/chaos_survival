@@ -4,11 +4,12 @@
     "a": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
+        "from": "minecraft:overworld",
         "to": "minecraft:the_nether"
       }
     }
   },
   "rewards": {
-    "function": "main:p_misson/3/get"
+    "function": "main:p_misson/2/get"
   }
 }

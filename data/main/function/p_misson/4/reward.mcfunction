@@ -1,5 +1,5 @@
 
-scoreboard players set @s p_missonC 2
+scoreboard players set @s p_missonA 2
 
 
 scoreboard players add @s score 2

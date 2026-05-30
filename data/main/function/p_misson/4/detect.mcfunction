@@ -18,7 +18,7 @@ execute as @a store success score @s temp3 run clear @s diamond_boots 0
 execute as @a run scoreboard players operation @s dia_armor_count += @s temp3
 
 
-execute as @a[scores={dia_armor_count=4,p_missonC=1}] run advancement grant @s only main:p_misson/4
+execute as @a[scores={dia_armor_count=4,p_missonA=1}] run advancement grant @s only main:p_misson/4
 
 
 scoreboard objectives remove temp3

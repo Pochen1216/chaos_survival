@@ -1,18 +1,16 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:obsidian"
+      "id": "minecraft:eye_armor_trim_smithing_template"
     },
     "title": {
-      "text": "深入一點",
+      "text": "獲得模板或唱片",
       "color": "#e59e06"
-
     },
-    "description": "進入地獄。你會因此獲得2分。",
-    "frame": "goal",
+    "description": "獲得模板或唱片。你會因此獲得1分。",
     "hidden": false
   },
-  "parent": "main:p_misson/1",
+  "parent": "main:p_misson/root",
   "criteria": {
     "a": {
       "trigger": "minecraft:impossible"

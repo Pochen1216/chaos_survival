@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_candle",
+      "count": 1
+    },
+    "title": {
+      "text": "混沌生存",
+      "type": "text",
+      "color": "#e59e06"
+    },
+    "description": "作者:破",
+    "background": "minecraft:block/beacon",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

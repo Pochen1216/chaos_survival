@@ -113,6 +113,40 @@ scoreboard objectives remove cc_gold
 scoreboard objectives remove cc_iron
 
 
+scoreboard objectives remove m89
+scoreboard objectives remove m92_3
+scoreboard objectives remove cm_target
+scoreboard objectives remove temp100
+scoreboard objectives remove m100_id
+scoreboard objectives remove m92_1
+scoreboard objectives remove m92_2
+scoreboard objectives remove test7
+scoreboard objectives remove test9
+scoreboard objectives remove m85
+scoreboard objectives remove m100_choice
+scoreboard objectives remove temp9
+scoreboard objectives remove detect_shield
+scoreboard objectives remove m98
+scoreboard objectives remove cm_choose
+scoreboard objectives remove wsheep
+scoreboard objectives remove m98_1
+scoreboard objectives remove stop
+scoreboard objectives remove m100_legacy
+scoreboard objectives remove detect_stone
+scoreboard objectives remove cm_entity
+scoreboard objectives remove m84
+scoreboard objectives remove m86
+scoreboard objectives remove detect_lava
+scoreboard objectives remove bsheep
+scoreboard objectives remove m100_score
+scoreboard objectives remove m100_pl_count
+scoreboard objectives remove run
+scoreboard objectives remove d_sec
+scoreboard objectives remove m83
+scoreboard objectives remove detect_wood
+scoreboard objectives remove m88
+scoreboard objectives remove cm_num
+scoreboard objectives remove temp_tick
 #p_misson
 
 scoreboard objectives remove p_missonA

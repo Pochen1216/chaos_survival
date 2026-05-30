@@ -11,6 +11,10 @@ scoreboard objectives add m92_1 used:crafting_table
 scoreboard objectives add m92_2 used:furnace
 scoreboard objectives add m92_3 used:chest
 
+scoreboard players set @a m92_1 0
+scoreboard players set @a m92_2 0
+scoreboard players set @a m92_3 0
+
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200
 

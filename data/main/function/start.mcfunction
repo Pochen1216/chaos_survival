@@ -116,6 +116,11 @@ title @a times 20 80 10
 #p_misson
 
 advancement revoke @a from main:p_misson/1
+advancement revoke @a from main:p_misson/2
+advancement revoke @a from main:p_misson/3
+
+
+
 
 scoreboard objectives add p_missonA dummy
 scoreboard objectives add p_missonB dummy
@@ -125,6 +130,10 @@ scoreboard players set @a p_missonA 0
 scoreboard players set @a p_missonB 0
 scoreboard players set @a p_missonC 0
 
+scoreboard objectives add p_misson1_1 minecraft.mined:minecraft.diamond_ore
+scoreboard objectives add p_misson1_2 minecraft.mined:deepslate_diamond_ore
+scoreboard players set @a p_misson1_1 0
+scoreboard players set @a p_misson1_1 0
 function main:p_misson/tick
 
 #event

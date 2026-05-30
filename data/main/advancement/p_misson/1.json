@@ -4,16 +4,15 @@
       "id": "minecraft:diamond"
     },
     "title": {
-      "text": "獲取鑽石",
+      "text": "挖取鑽石",
       "color": "#e59e06"
-
     },
     "description": {
-      "text": "獲得一顆鑽石。你會因此獲得1分。"
+      "text": "挖取一塊鑽石礦。你會因此獲得1分。"
     },
     "hidden": false
   },
-  "parent": "main:root",
+  "parent": "main:p_misson/root",
   "criteria": {
     "a": {
       "trigger": "minecraft:impossible"
