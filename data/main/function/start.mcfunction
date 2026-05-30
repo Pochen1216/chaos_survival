@@ -133,7 +133,7 @@ scoreboard players set @a p_missonC 0
 scoreboard objectives add p_misson1_1 minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add p_misson1_2 minecraft.mined:deepslate_diamond_ore
 scoreboard players set @a p_misson1_1 0
-scoreboard players set @a p_misson1_1 0
+scoreboard players set @a p_misson1_2 0
 function main:p_misson/tick
 
 #event

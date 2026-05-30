@@ -3,8 +3,10 @@
 
 execute store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..100
 
+tag @e[tag=m_cen,type=minecraft:marker] remove doing_misson
+
 #善後
-kill @e[tag=misson]
+kill @e[tag=misson,tag=!immute_misson_kill]
 
 #e22:point
 
@@ -25,7 +27,7 @@ scoreboard players set @e[tag=m_cen,limit=1,type=marker] misson_countdown -1
 #偵測結束
 execute as @a[tag=win] if score @s score >= @e[tag=m_cen,limit=1,type=marker] target run tag @s add sowin
 execute if entity @a[tag=sowin] run function main:end
-tag @a remove win
+
 execute if entity @a[tag=sowin] run return 0
 
 

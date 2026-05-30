@@ -3,7 +3,9 @@
 scoreboard players reset @a cm_choose
 schedule clear main:system/cho_misson/tick
 
+tag @e[tag=m_cen,type=minecraft:marker] add doing_misson
 
+tag @a remove win
 
 tellraw @a {"text":"-------------------------------------\n","color":"gray"}
 
@@ -116,3 +118,10 @@ execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=97},limi
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=98},limit=1] run function main:misson/91_100/98/start
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=99},limit=1] run function main:misson/91_100/99/start
 execute if entity @e[tag=m_cen,type=minecraft:marker,scores={misson_num=100},limit=1] run function main:misson/91_100/100/start
+
+schedule function main:system/hidden_advencement/detect 1t
+
+
+#e39
+execute as @a[tag=marsh] run function main:event/39_misson_go
+

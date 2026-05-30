@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_sword"
+    },
+    "title": {
+      "text": "認真玩遊戲",
+      "color": "#1dd396"
+    },
+    "description": "在黑白羊任務中，身邊羊數>0且贏得任務",
+    "background": "minecraft:block/copper_block",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true,
+    "frame": "task"
+  },
+  "parent": "main:hidden/root",
+  "criteria": {
+    "a": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

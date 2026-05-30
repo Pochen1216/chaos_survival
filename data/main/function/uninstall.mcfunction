@@ -152,10 +152,8 @@ scoreboard objectives remove temp_tick
 scoreboard objectives remove p_missonA
 scoreboard objectives remove p_missonB
 scoreboard objectives remove p_missonC
-scoreboard objectives remove zombie_counter
-scoreboard objectives remove zombie_counter2
-scoreboard objectives remove rod_count
-scoreboard objectives remove cry_obby_count
+
+
 scoreboard objectives remove dia_armor_count
 
 

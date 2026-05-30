@@ -51,7 +51,7 @@ execute as @a if score @s d_cooldown matches 1.. run title @s actionbar [{"text"
 
 
 #event22
-effect give @a[tag=e22_res] resistance 1 1 true
+effect give @a[tag=e22_res] resistance 1 2 true
 
 
 

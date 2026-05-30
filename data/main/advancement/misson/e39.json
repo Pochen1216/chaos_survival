@@ -1,0 +1,16 @@
+{
+    "parent": "main:root",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "white_dye"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "main:event/39_get"
+    }
+}

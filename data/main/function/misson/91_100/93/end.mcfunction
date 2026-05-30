@@ -9,7 +9,8 @@ execute as @a[team=!spec] if score @s bsheep = @s wsheep run tag @s add win
 
 execute as @a run tellraw @s [{"text":"[系統]","color":"gold"},{text:"你身邊共有",color:white},{color:gold,score:{name:"@s",objective:bsheep}},{text:" 隻黑羊，",color:white},{color:gold,score:{name:"@s",objective:wsheep}},{"text":"隻白羊",color:white}]
 
-
+#hidden
+execute as @a[tag=win] if score @s bsheep matches 1.. run advancement grant @s only main:hidden/93
 
 #[系統]@a[tag=win]贏得了這回合!
 function main:system/win_tellraw
