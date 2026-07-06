@@ -1,6 +1,6 @@
 
 
-tag @a[team=!spec] add win
+tag @a[team=!spec,scores={m14 = 1..}] add win
 
 #[系統]@a[tag=win]贏得了這回合!
 function main:system/win_tellraw

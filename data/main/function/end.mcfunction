@@ -46,7 +46,7 @@ scoreboard players reset @a admin
 
 #reset 
 
-gamemode adventure @a
+#gamemode adventure @a
 scoreboard objectives remove armor_value
 execute as @a run attribute @s jump_strength base reset
 execute as @a run attribute @s movement_speed base reset
