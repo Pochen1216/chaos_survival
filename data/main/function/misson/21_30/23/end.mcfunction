@@ -1,6 +1,6 @@
 
 
-gamerule naturalRegeneration true
+gamerule natural_health_regeneration true
 
 execute at @e[tag=m_cen,limit=1] run fill ~ 155 ~ ~16 155 ~16 air
 

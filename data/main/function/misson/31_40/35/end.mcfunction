@@ -13,7 +13,7 @@ execute as @a[team=!spec] run tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"a
 
 
 #adv.
-advancement grant @a[scores={point=150..}] only main:hidden/35
+advancement grant @a[scores={point=300..}] only main:hidden/35
 
 
 

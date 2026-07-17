@@ -5,7 +5,7 @@ execute as @a at @s run playsound minecraft:entity.arrow.hit_player
 
 #[任務]將線獲知蛛網置於副手上繳，繳交數量合計最高的可得一分!
 
-tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"將線或蜘蛛網置於副手上繳，繳交數量合計最高的可得一分!"}]
+tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"極入線、蛛網之得一分。"}]
 
 
 scoreboard objectives add point dummy

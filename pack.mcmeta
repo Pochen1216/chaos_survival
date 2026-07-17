@@ -1,6 +1,8 @@
 	{
 	"pack": {
-		"pack_format": 88,
-		"description": "渾沌生存指令包v1.2.7 by Poal"
+		"min_format": [75],
+		"max_format" : [94,0],
+		"pack_format": 94.1,
+		"description": "渾沌生存指令包v1.3.1 by Poal"
 	}
 }

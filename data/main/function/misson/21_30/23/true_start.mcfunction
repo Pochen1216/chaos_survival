@@ -1,5 +1,5 @@
 
-gamerule naturalRegeneration false
+gamerule natural_health_regeneration false
 #effect clear @a resistance
 #effect clear @a slowness
 #effect clear @a mining_fatigue

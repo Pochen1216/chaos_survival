@@ -69,7 +69,7 @@ effect give @a saturation 10 100 true
 effect give @a instant_health 1 100 true
 effect give @a resistance 10 4 false
 
-gamerule keepInventory true
+gamerule keep_inventory true
 execute at @e[limit=1,tag=m_cen] run spawnpoint @a
 
 xp set @a 0 levels
@@ -106,9 +106,9 @@ tellraw @a[gamemode=creative] [{"text":"[提示]遊戲中使用/trigger admin可
 
 gamemode survival @a[team=!spec]
 time set day
-gamerule sendCommandFeedback false
-gamerule commandBlockOutput false
-gamerule doImmediateRespawn true
+gamerule send_command_feedback false
+gamerule command_block_output false
+gamerule immediate_respawn true
 
 bossbar set minecraft:misson_timer players @a
 title @a times 20 80 10

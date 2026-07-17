@@ -157,8 +157,8 @@ scoreboard objectives remove p_missonC
 scoreboard objectives remove dia_armor_count
 
 
-gamerule sendCommandFeedback true
-gamerule doImmediateRespawn false
+gamerule send_command_feedback true
+gamerule immediate_respawn false
 
 
 tellraw @a ["",{"text":"\n\n\n\n\n\n\n\n\n\n\n\n[\u7cfb\u7d71]","color":"gold"},{"text":"\u5378\u8f09\u5b8c\u6210\uff0c\u518d\u6b21\u4f7f\u7528\u8acb\u6253/reload","color":"white"}]
