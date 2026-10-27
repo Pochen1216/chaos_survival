@@ -1,0 +1,1 @@
+execute unless entity @e[type=marker,tag=m_cen,tag=orange_p_misson_success3] if entity @a[team=orange,advancements={main:p_misson/7=true}] if entity @a[team=orange,advancements={main:p_misson/8=true}] if entity @a[team=orange,advancements={main:p_misson/9=true}] run function main:p_misson/team_mode/orange/success3

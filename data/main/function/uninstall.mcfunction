@@ -14,6 +14,12 @@ kill @e[tag=tp]
 
 bossbar remove minecraft:misson_timer
 
+team remove blue
+team remove green
+team remove orange
+team remove spec
+team remove red
+
 scoreboard objectives remove score
 scoreboard objectives remove cen_x
 scoreboard objectives remove cen_y

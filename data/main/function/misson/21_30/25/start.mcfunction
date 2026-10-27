@@ -9,6 +9,11 @@ tellraw @a ["",{"text":"[\u4efb\u52d9]","color":"aqua"},{"text":"\u96a8\u6a5f\u4
 
 
 
+execute as @a[team=red] run tag @s add T_red
+execute as @a[team=green] run tag @s add T_green
+execute as @a[team=orange] run tag @s add T_orange
+execute as @a[team=blue] run tag @s add T_blue
+
 
 
 
@@ -29,8 +34,8 @@ advancement revoke @a only main:misson/25/hit
 advancement revoke @a only main:misson/25/be_hit
 
 team add 25
-team modify 25 color red
-team modify 25 prefix {"text":"[IT]","color":"#f70000"}
+team modify 25 color dark_red
+team modify 25 prefix {"text":"[IT]","color":dark_red}
 
 scoreboard players set @e[tag=m_cen] misson_countdown 1200
 bossbar set minecraft:misson_timer max 1200

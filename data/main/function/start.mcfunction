@@ -22,6 +22,24 @@ execute as @a run scoreboard players set @s settings 0
 scoreboard players reset @a settings
 tag @e[type=marker,tag=m_cen] add in_game
 
+
+#team_mode_p_misson
+tag @e[type=marker,tag=m_cen] remove red_p_misson_success1
+tag @e[type=marker,tag=m_cen] remove red_p_misson_success2
+tag @e[type=marker,tag=m_cen] remove red_p_misson_success3
+tag @e[type=marker,tag=m_cen] remove blue_p_misson_success1
+tag @e[type=marker,tag=m_cen] remove blue_p_misson_success2
+tag @e[type=marker,tag=m_cen] remove blue_p_misson_success3
+tag @e[type=marker,tag=m_cen] remove green_p_misson_success1
+tag @e[type=marker,tag=m_cen] remove green_p_misson_success2
+tag @e[type=marker,tag=m_cen] remove green_p_misson_success3
+tag @e[type=marker,tag=m_cen] remove orange_p_misson_success1
+tag @e[type=marker,tag=m_cen] remove orange_p_misson_success2
+tag @e[type=marker,tag=m_cen] remove orange_p_misson_success3
+
+
+
+
 #info
 scoreboard objectives setdisplay sidebar info
 scoreboard objectives setdisplay list score
@@ -156,4 +174,3 @@ advancement revoke @a from main:hidden/root
 
 scoreboard objectives add armor_value armor
 scoreboard objectives add lv_now level
-

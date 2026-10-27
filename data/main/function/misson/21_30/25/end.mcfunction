@@ -18,6 +18,12 @@ team remove 25
 scoreboard objectives remove 25_tp
 
 
+team join red @a[tag=T_red]
+team join green @a[tag=T_green]
+team join orange @a[tag=T_orange]
+team join blue @a[tag=T_blue]
+
+
 #[系統]@a[tag=win]贏得了這回合!
 function main:system/win_tellraw
 execute as @a at @s run playsound minecraft:block.beacon.deactivate

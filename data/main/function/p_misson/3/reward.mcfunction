@@ -1,11 +1,15 @@
 
 scoreboard players set @s p_missonC 1
 
+execute as @s[team=red] run return run function main:p_misson/team_mode/red/check1
+execute as @s[team=green] run return run function main:p_misson/team_mode/green/check1
+execute as @s[team=orange] run return run function main:p_misson/team_mode/orange/check1
+execute as @s[team=blue] run return run function main:p_misson/team_mode/blue/check1
 
 scoreboard players add @s score 1
 
 
-#​[常駐任務]玩家@s完成了常駐任務，因此獲得2分!
+#​[常駐任務]玩家@s完成了常駐任務，因此獲得1分!
 tellraw @a ["",{"text":"[\u5e38\u99d0\u4efb\u52d9]","color":"dark_aqua"},{"text":"\u73a9\u5bb6","color":"white"},{"selector":"@s","color":"dark_green"},{"text":"\u5b8c\u6210\u4e86\u5e38\u99d0\u4efb\u52d9\uff0c\u56e0\u6b64\u7372\u5f971\u5206!","color":"white"},{"text":"\n "}]
 
 #advancement revoke @s from main:p_misson/hidden/6
@@ -13,4 +17,3 @@ tellraw @a ["",{"text":"[\u5e38\u99d0\u4efb\u52d9]","color":"dark_aqua"},{"text"
 
 
 function main:p_misson/checkwin
-

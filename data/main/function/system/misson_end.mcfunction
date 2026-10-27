@@ -1,5 +1,7 @@
 
 
+#團隊模式:去另一邊
+execute if entity @e[type=marker,tag=m_cen,tag=team] run return run function main:system/misson_end_team
 
 execute store result score @e[type=marker,limit=1,tag=m_cen] misson_num run random value 1..100
 
@@ -29,6 +31,10 @@ execute as @a[tag=win] if score @s score >= @e[tag=m_cen,limit=1,type=marker] ta
 execute if entity @a[tag=sowin] run function main:end
 
 execute if entity @a[tag=sowin] run return 0
+
+
+
+
 
 
 

@@ -1,6 +1,10 @@
 
 scoreboard players set @s p_missonB 3
 
+execute as @s[team=red] run return run function main:p_misson/team_mode/red/check3
+execute as @s[team=green] run return run function main:p_misson/team_mode/green/check3
+execute as @s[team=orange] run return run function main:p_misson/team_mode/orange/check3
+execute as @s[team=blue] run return run function main:p_misson/team_mode/blue/check3
 
 scoreboard players add @s score 3
 
@@ -11,6 +15,3 @@ tellraw @a ["",{"text":"[\u5e38\u99d0\u4efb\u52d9]","color":"dark_aqua"},{"text"
 
 
 function main:p_misson/checkwin
-
-
-

@@ -23,7 +23,15 @@ effect give @a[scores={hot_potato=1}] speed 1 1 true
 effect give @a[scores={hot_potato=1}] resistance 1 1 true
 effect give @a[scores={hot_potato=1}] dolphins_grace 1 0 true
 team join 25 @a[scores={hot_potato=1}]
+
+
 team leave @a[scores={hot_potato=0}]
+
+team join red @a[scores={hot_potato=0},tag=T_red]
+team join green @a[scores={hot_potato=0},tag=T_green]
+team join orange @a[scores={hot_potato=0},tag=T_orange]
+team join blue @a[scores={hot_potato=0},tag=T_blue]
+
 
 #清除成就
 advancement revoke @a only main:misson/25/be_hit

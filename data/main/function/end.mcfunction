@@ -1,8 +1,14 @@
 
-tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"selector":"@a[tag=sowin]","color":"green"},{"text":"\u7372\u5f97\u4e86\u6700\u7d42\u7684\u52dd\u5229!","color":"white"}]
+execute if entity @a[tag=sowin,team=red] as @a[team=red] run tag @s add sowin
+execute if entity @a[tag=sowin,team=blue] as @a[team=blue] run tag @s add sowin
+execute if entity @a[tag=sowin,team=green] as @a[team=green] run tag @s add sowin
+execute if entity @a[tag=sowin,team=orange] as @a[team=red] run tag @s add sowin
+
+
+tellraw @a ["",{"text":"[\u7cfb\u7d71]","color":"gold"},{"selector":"@a[tag=sowin]"},{"text":"\u7372\u5f97\u4e86\u6700\u7d42\u7684\u52dd\u5229!","color":"white"}]
 
 title @a times 20 100 20
-title @a title ["",{"selector":"@a[tag=sowin]","color":"green"},{"text":" Win!","color":"white"}]
+title @a title ["",{"selector":"@a[tag=sowin]"},{"text":" Win!","color":"white"}]
 execute as @a at @s run playsound minecraft:entity.allay.death
 
 tag @e remove in_game
